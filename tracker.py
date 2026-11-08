@@ -273,18 +273,24 @@ def fetch_match(match_id: str) -> dict:
 # ---------------------------------------------------------------------------
 
 def push(title: str, message: str, tags: str, url: str, priority: str = "default", dry_run: bool = False):
-    topic = os.environ.get("NTFY_TOPIC")
-    server = os.environ.get("NTFY_SERVER", "https://ntfy.sh")
+    topic = (os.environ.get("NTFY_TOPIC") or "").strip()
+    server = os.environ.get("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
     log(f"PUSH [{tags}] {title} | {message}")
     if dry_run or not topic:
+        if not topic and not dry_run:
+            log("Kein NTFY_TOPIC gesetzt – Push übersprungen")
         return
+    # JSON-Variante: Umlaute und Emojis sind hier sicher (in HTTP-Headern nicht)
+    body = {
+        "topic": topic, "title": title, "message": message,
+        "tags": [t for t in tags.split(",") if t],
+        "priority": {"min": 1, "low": 2, "default": 3, "high": 4, "max": 5}.get(priority, 3),
+        "click": url,
+    }
     try:
-        session.post(
-            f"{server}/{topic}",
-            data=message.encode("utf-8"),
-            headers={"Title": title.encode("utf-8"), "Tags": tags, "Click": url, "Priority": priority},
-            timeout=15,
-        )
+        r = session.post(server, json=body, timeout=15)
+        if r.status_code >= 300:
+            log(f"Push abgelehnt ({r.status_code}): {r.text[:200]}")
     except requests.RequestException as e:
         log("Push fehlgeschlagen:", e)
 
@@ -562,6 +568,10 @@ def main():
     cfg = load_json(CONFIG_PATH, {})
     state = load_json(STATE_PATH, {})
     started = now_utc()
+
+    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
+        push("✅ Ergebnistracker: Testnachricht", "Manueller Start – die Verbindung zur App funktioniert.",
+             "white_check_mark", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "low", args.dry_run)
 
     refresh_schedule(cfg, state)
     send_digest(cfg, state, args.dry_run)
