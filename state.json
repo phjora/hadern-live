@@ -1,29 +1,51 @@
 {
+ "digest_date": "2026-11-08",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
-   "competition": "Meisterschaften, Kreisliga München",
+   "competition": "Kreisliga München",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "SV Helios-Daglfing",
+   "home_plan": "TSV Großhadern",
    "id": "031BSK5UCS000000VS5489BTVUS470OH",
    "kickoff": "2026-11-08T13:00:00+00:00",
-   "location": "Sportanlage Heiglhofstraße,Heiglhofstr. 25,81377 München",
-   "pairing": "TSV Großhadern-SV Helios-Daglfing",
+   "location": "Sportanlage Heiglhofstraße | Heiglhofstr. 25 | 81377 München",
+   "pairing": "TSV Großhadern – SV Helios-Daglfing",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
   "031BSK5UOS000000VS5489BTVUS470OH": {
-   "competition": "Meisterschaften, Kreisliga München",
+   "competition": "Kreisliga München",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern",
+   "home_plan": "TSV Trudering M.",
    "id": "031BSK5UOS000000VS5489BTVUS470OH",
    "kickoff": "2026-11-15T12:15:00+00:00",
-   "location": "BSA Feldbergstraße, Kunstrasenplatz 2,Feldbergstr. 65,81825 München",
-   "pairing": "TSV Trudering M.-TSV Großhadern",
+   "location": "BSA Feldbergstraße, Kunstrasenplatz 2 | Feldbergstr. 65 | 81825 München",
+   "pairing": "TSV Trudering M. – TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
   "031BSK61T8000000VS5489BTVUS470OH": {
-   "competition": "Meisterschaften, Kreisliga München",
+   "competition": "Kreisliga München",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Neuried",
+   "home_plan": "TSV Großhadern",
    "id": "031BSK61T8000000VS5489BTVUS470OH",
    "kickoff": "2026-11-22T13:00:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern-TSV Neuried",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern – TSV Neuried",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -33,6 +55,9 @@
    "kickoff": "2027-03-14T10:15:00+00:00",
    "location": "Sportanlage Untermenzing, Kunstrasen,Prof.-Eichmann-Str. 11,80999 München",
    "pairing": "SV Untermenzing 2-TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -42,6 +67,9 @@
    "kickoff": "2027-03-21T13:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern-FC Neuhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -51,6 +79,9 @@
    "kickoff": "2027-03-28T11:30:00+00:00",
    "location": "Sportanlage Moosacher Straße, Platz 2,Moosacher Str. 99,80809 München",
    "pairing": "SV Olympiadorf München-TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -60,6 +91,9 @@
    "kickoff": "2027-04-04T12:00:00+00:00",
    "location": "Sportanlage Heiglhofstraße,Heiglhofstr. 25,81377 München",
    "pairing": "TSV Großhadern-TSV Eintracht Karlsfeld 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -69,6 +103,9 @@
    "kickoff": "2027-04-11T12:30:00+00:00",
    "location": "Sportanlage Sulzemoos, Platz 1,Mörtlstr. 6,85254 Sulzemoos",
    "pairing": "SV Sulzemoos-TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -78,6 +115,9 @@
    "kickoff": "2027-04-18T12:00:00+00:00",
    "location": "Sportanlage Heiglhofstraße,Heiglhofstr. 25,81377 München",
    "pairing": "TSV Großhadern-TSV Grasbrunn-Neukeferloh",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -87,6 +127,9 @@
    "kickoff": "2027-04-25T12:00:00+00:00",
    "location": "Sportanlage Heiglhofstraße,Heiglhofstr. 25,81377 München",
    "pairing": "TSV Großhadern-SC Grüne Heide",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -96,6 +139,9 @@
    "kickoff": "2027-05-02T12:30:00+00:00",
    "location": "Sportanlage St.-Martin-Straße, Kunstrasen,St.-Martin-Str. 35,81541 München",
    "pairing": "SpVgg 1906 Haidhausen-TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -105,6 +151,9 @@
    "kickoff": "2027-05-09T12:00:00+00:00",
    "location": "Sportanlage Heiglhofstraße,Heiglhofstr. 25,81377 München",
    "pairing": "TSV Großhadern-SC Baldham-Vaterstetten",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -114,6 +163,9 @@
    "kickoff": "2027-05-23T13:00:00+00:00",
    "location": "BSA Grohmannstraße Platz 1,Grohmannstr. 63,80933 München",
    "pairing": "TSV 54 - DJK München-TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -123,24 +175,71 @@
    "kickoff": "2027-05-30T12:00:00+00:00",
    "location": "Sportanlage Heiglhofstraße,Heiglhofstr. 25,81377 München",
    "pairing": "TSV Großhadern-FSV Harthof Mü.",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
   "031FNQH8F4000000VS5489BUVSJ4CRAP": {
-   "competition": "Meisterschaften, 113 Kreisklasse 3",
+   "competition": "113 Kreisklasse 3",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern 2",
+   "home_plan": "Münchner Kickers",
    "id": "031FNQH8F4000000VS5489BUVSJ4CRAP",
    "kickoff": "2026-11-22T13:00:00+00:00",
-   "location": "BSA Wolkerweg, Kunstrasen,Wolkerweg 17,81375 München",
-   "pairing": "Münchner Kickers-TSV Großhadern 2",
+   "location": "BSA Wolkerweg, Kunstrasen | Wolkerweg 17 | 81375 München",
+   "pairing": "Münchner Kickers – TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
   "031FNQH8O0000000VS5489BUVSJ4CRAP": {
-   "competition": "Meisterschaften, 113 Kreisklasse 3",
+   "competition": "113 Kreisklasse 3",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "SV Planegg-Krailling 2",
+   "home_plan": "TSV Großhadern 2",
    "id": "031FNQH8O0000000VS5489BUVSJ4CRAP",
    "kickoff": "2026-11-15T10:00:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern 2-SV Planegg-Krailling 2",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern 2 – SV Planegg-Krailling 2",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern 2",
+   "team_label": "2. Mannschaft"
+  },
+  "031FNQH8U8000000VS5489BUVSJ4CRAP": {
+   "checked": "2026-11-08T08:51:59.331134+00:00",
+   "competition": "113 Kreisklasse 3",
+   "festival": false,
+   "festival_hint": false,
+   "guest": "TSV Großhadern 2",
+   "guest_plan": "TSV Großhadern 2",
+   "halftime": "0:0",
+   "home": "DJK Pasing 2",
+   "home_plan": "DJK Pasing 2",
+   "id": "031FNQH8U8000000VS5489BUVSJ4CRAP",
+   "kickoff": "2026-11-07T17:00:00+00:00",
+   "location": "BSA Agnes-Bernauer-Straße, Platz 1 | Agnes-Bernauer-Str. 239 | 81241 München",
+   "pairing": "DJK Pasing 2 – TSV Großhadern 2",
+   "result": "0:3",
+   "st": {
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3
+    ],
+    "kickoff_sent": true,
+    "statuses": [
+     "acknowledged"
+    ]
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -150,6 +249,9 @@
    "kickoff": "2027-05-23T11:15:00+00:00",
    "location": "BSA Hans-Dietrich-Genscher-Straße - Platz 2,BSA Hans-Dietrich-Genscher-Straße 11 - 15,81249 München",
    "pairing": "FC Anadolu Bayern-TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -159,6 +261,9 @@
    "kickoff": "2027-05-30T09:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern 2-ESV München",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -168,6 +273,9 @@
    "kickoff": "2027-05-09T11:00:00+00:00",
    "location": "BSA Agnes-Bernauer-Straße, Kunstrasen,Agnes-Bernauer-Str. 239,81241 München",
    "pairing": "SpFrd Pasing M.-TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -177,6 +285,9 @@
    "kickoff": "2027-05-02T09:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern 2-SV Aubing U23 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -186,6 +297,9 @@
    "kickoff": "2027-04-25T11:00:00+00:00",
    "location": "Sportanlage Papinstraße, Platz 2,Papinstr. 22a,81249 München",
    "pairing": "(SG) ESV Neuaubing/FC Georgia-TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -195,6 +309,9 @@
    "kickoff": "2027-04-18T09:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern 2-TSV Forstenried",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -204,6 +321,9 @@
    "kickoff": "2027-04-11T11:00:00+00:00",
    "location": "BSA Herterichstraße, Kunstrasen,Herterichstr. 141,81476 München",
    "pairing": "TSV Mün.-Solln 2-TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -213,6 +333,9 @@
    "kickoff": "2027-04-04T09:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern 2-SV München Laim",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -222,6 +345,9 @@
    "kickoff": "2027-03-27T10:30:00+00:00",
    "location": "BSA Aubinger Straße, Platz 1,Aubinger Str. 12,81243 München",
    "pairing": "TSG Pasing-TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -231,6 +357,9 @@
    "kickoff": "2027-03-21T13:30:00+00:00",
    "location": "BSA Graubündener Straße, Kunstrasen,Graubündener Str. 100,81475 München",
    "pairing": "FC Espanol M.-TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -240,6 +369,9 @@
    "kickoff": "2027-03-14T10:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern 2-Münchner Kickers",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -249,15 +381,25 @@
    "kickoff": "2027-03-07T11:45:00+00:00",
    "location": "Georg Heide Stadion Planegg,Hofmarkstr. 51,82152 Planegg",
    "pairing": "SV Planegg-Krailling 2-TSV Großhadern 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
   "031FNQHE80000000VS5489BUVSJ4CRAP": {
-   "competition": "Meisterschaften, 113 Kreisklasse 3",
+   "competition": "113 Kreisklasse 3",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "DJK Pasing 2",
+   "home_plan": "TSV Großhadern 2",
    "id": "031FNQHE80000000VS5489BUVSJ4CRAP",
    "kickoff": "2026-11-29T10:00:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern 2-DJK Pasing 2",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern 2 – DJK Pasing 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -267,6 +409,9 @@
    "kickoff": "2027-01-31T13:30:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern-TSG Pasing",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -276,6 +421,9 @@
    "kickoff": "2027-02-28T13:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern-Lenggrieser SC",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -285,105 +433,280 @@
    "kickoff": "2027-02-28T11:00:00+00:00",
    "location": "Sportanlage St.-Martin-Straße, Kunstrasen,St.-Martin-Str. 35,81541 München",
    "pairing": "SpVgg 1906 Haidhausen II-TSV Großhadern II",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
+  "031KIN398G000000VS5489BUVVKNMR0J": {
+   "competition": "U8 (F-J) Süd Puma",
+   "festival": true,
+   "festival_hint": true,
+   "guest_plan": "TSV Großhadern U8",
+   "home_plan": "SV Olympiadorf München U8 2",
+   "id": "031KIN398G000000VS5489BUVVKNMR0J",
+   "kickoff": "2026-11-14T09:45:00+00:00",
+   "location": "Sportanlage Moosacher Straße, Platz 1 | Moosacher Str. 99 | 80809 München",
+   "pairing": "SV Olympiadorf München U8 2 – TSV Großhadern U8",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern U8",
+   "team_label": "U8"
+  },
+  "031KIRESG4000000VS5489BUVVKNMR0J": {
+   "competition": "U9 (F-J) Süd Jaguar 1",
+   "festival": true,
+   "festival_hint": true,
+   "guest_plan": "TSV Großhadern U9",
+   "home_plan": "TSV München-Ost U9 2",
+   "id": "031KIRESG4000000VS5489BUVVKNMR0J",
+   "kickoff": "2026-11-14T08:00:00+00:00",
+   "location": "Sportanlage Sieboldstraße | Sieboldstr. 4 | 81669 München",
+   "pairing": "TSV München-Ost U9 2 – TSV Großhadern U9",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern U9",
+   "team_label": "U9"
+  },
+  "031KJUFUBG000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-08T08:51:59.331134+00:00",
+   "competition": "U10 (E-J) Süd Kupfer",
+   "festival": false,
+   "festival_hint": false,
+   "guest": "TSV Großhadern U10",
+   "guest_plan": "TSV Großhadern U10",
+   "halftime": "3:4",
+   "home": "BSC Sendling 1918 München U10",
+   "home_plan": "BSC Sendling 1918 München U10",
+   "id": "031KJUFUBG000000VS5489BUVVKNMR0J",
+   "kickoff": "2026-11-07T12:45:00+00:00",
+   "location": "Städt. Sportanlage / Siegenburgstr. - Kunstrasen-KF Platz 2 (Kompaktfeld) | Siegenburger Straße 51 | 81373 München",
+   "pairing": "BSC Sendling 1918 München U10 – TSV Großhadern U10",
+   "result": "5:12",
+   "st": {
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "statuses": [
+     "finished"
+    ]
+   },
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
+  },
   "031KJUFUJ0000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U10 (E-J) Süd Kupfer",
+   "competition": "U10 (E-J) Süd Kupfer",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "MTV München U10",
+   "home_plan": "TSV Großhadern U10",
    "id": "031KJUFUJ0000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T09:30:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern U10-MTV München U10",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U10 – MTV München U10",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
   },
   "031KJUFUJS000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U10 (E-J) Süd Kupfer",
+   "competition": "U10 (E-J) Süd Kupfer",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U10",
+   "home_plan": "FC Anadolu Bayern U10",
    "id": "031KJUFUJS000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T13:30:00+00:00",
-   "location": "BSA Hans-Dietrich-Genscher-Straße - Platz 2,BSA Hans-Dietrich-Genscher-Straße 11 - 15,81249 München",
-   "pairing": "FC Anadolu Bayern U10-TSV Großhadern U10",
+   "location": "BSA Hans-Dietrich-Genscher-Straße - Platz 2 | BSA Hans-Dietrich-Genscher-Straße 11 - 15 | 81249 München",
+   "pairing": "FC Anadolu Bayern U10 – TSV Großhadern U10",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
   },
   "031KJUIVGO000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U10 (E-J) Süd Magenta",
+   "competition": "U10 (E-J) Süd Magenta",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U10 2",
+   "home_plan": "BSC Sendling 1918 München U10 2",
    "id": "031KJUIVGO000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-08T10:00:00+00:00",
-   "location": "Städt. Sportanlage / Siegenburgstr. - Kunstrasenplatz 3,Siegenburger Str. 51,81373 München",
-   "pairing": "BSC Sendling 1918 München U10 2-TSV Großhadern U10 2",
+   "location": "Städt. Sportanlage / Siegenburgstr. - Kunstrasenplatz 3 | Siegenburger Str. 51 | 81373 München",
+   "pairing": "BSC Sendling 1918 München U10 2 – TSV Großhadern U10 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U10 2",
    "team_label": "U10 2"
   },
   "031KJUIVNO000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U10 (E-J) Süd Magenta",
+   "competition": "U10 (E-J) Süd Magenta",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "FC Espanol München U10",
+   "home_plan": "TSV Großhadern U10 2",
    "id": "031KJUIVNO000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T08:00:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern U10 2-FC Espanol München U10",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U10 2 – FC Espanol München U10",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U10 2",
    "team_label": "U10 2"
   },
   "031KJUIVP4000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U10 (E-J) Süd Magenta",
+   "competition": "U10 (E-J) Süd Magenta",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U10 2",
+   "home_plan": "SV Olympiadorf München U10 2",
    "id": "031KJUIVP4000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T09:30:00+00:00",
-   "location": "Sportanlage Moosacher Straße, Platz 1,Moosacher Str. 99,80809 München",
-   "pairing": "SV Olympiadorf München U10 2-TSV Großhadern U10 2",
+   "location": "Sportanlage Moosacher Straße, Platz 1 | Moosacher Str. 99 | 80809 München",
+   "pairing": "SV Olympiadorf München U10 2 – TSV Großhadern U10 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U10 2",
    "team_label": "U10 2"
   },
+  "031KK1KRLK000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-08T08:51:59.331134+00:00",
+   "competition": "U19 (A-Jun.) Kreisklasse Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "guest_plan": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "halftime": "5:0",
+   "home": "FC Teutonia U19 2",
+   "home_plan": "FC Teutonia U19 2",
+   "id": "031KK1KRLK000000VS5489BUVVKNMR0J",
+   "kickoff": "2026-11-07T17:15:00+00:00",
+   "location": "Sportanlage Kunstrasen / Platz 3 | Thusnelda-Lang-Brumann-Str. 14 | 80637 München",
+   "pairing": "FC Teutonia U19 2 – (SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "result": "10:0",
+   "st": {
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "kickoff_sent": true,
+    "statuses": [
+     "acknowledged"
+    ]
+   },
+   "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "team_label": "U19 (SG)"
+  },
   "031KK1KRTC000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U19 (A-Jun.) Kreisklasse Süd",
+   "competition": "U19 (A-Jun.) Kreisklasse Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "home_plan": "SC München-Süd U19",
    "id": "031KK1KRTC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T17:00:00+00:00",
-   "location": "BSA Thalkirchner Straße, Kunstrasen,Thalkirchner Str. 209,81371 München",
-   "pairing": "SC München-Süd U19-(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "location": "BSA Thalkirchner Straße, Kunstrasen | Thalkirchner Str. 209 | 81371 München",
+   "pairing": "SC München-Süd U19 – (SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "st": {
+    "goals": []
+   },
    "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "team_label": "U19 (SG)"
   },
   "031KK28HLC000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U17 (B-Jun.) Kreisliga Süd 2",
+   "competition": "U17 (B-Jun.) Kreisliga Süd 2",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U17",
+   "home_plan": "SV Planegg-Krailling U17 2",
    "id": "031KK28HLC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-08T14:00:00+00:00",
-   "location": "Georg Heide Stadion Planegg,Hofmarkstr. 51,82152 Planegg",
-   "pairing": "SV Planegg-Krailling U17 2-TSV Großhadern U17",
+   "location": "Georg Heide Stadion Planegg | Hofmarkstr. 51 | 82152 Planegg",
+   "pairing": "SV Planegg-Krailling U17 2 – TSV Großhadern U17",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U17",
    "team_label": "U17"
   },
   "031KK28HU4000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U17 (B-Jun.) Kreisliga Süd 2",
+   "competition": "U17 (B-Jun.) Kreisliga Süd 2",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U17",
+   "home_plan": "SV Aubing U17",
    "id": "031KK28HU4000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:30:00+00:00",
-   "location": "BSA Kronwinkler Straße, Kunstrasen,Kronwinkler Str. 25,81245 München",
-   "pairing": "SV Aubing U17-TSV Großhadern U17",
+   "location": "BSA Kronwinkler Straße, Kunstrasen | Kronwinkler Str. 25 | 81245 München",
+   "pairing": "SV Aubing U17 – TSV Großhadern U17",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U17",
    "team_label": "U17"
   },
   "031KK5UG64000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U15 (JgL) Kreisklasse Süd",
+   "competition": "U15 (JgL) Kreisklasse Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Gräfelfing U15",
+   "home_plan": "TSV Großhadern U15",
    "id": "031KK5UG64000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-12T17:00:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern U15-TSV Gräfelfing U15",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U15 – TSV Gräfelfing U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
   "031KK5UGEC000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U15 (JgL) Kreisklasse Süd",
+   "competition": "U15 (JgL) Kreisklasse Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSG Pasing U15",
+   "home_plan": "TSV Großhadern U15",
    "id": "031KK5UGEC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T13:45:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern U15-TSG Pasing U15",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U15 – TSG Pasing U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
   "031KK5UGFC000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U15 (JgL) Kreisklasse Süd",
+   "competition": "U15 (JgL) Kreisklasse Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U15",
+   "home_plan": "FC Teutonia U15 2",
    "id": "031KK5UGFC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:30:00+00:00",
-   "location": "Sportanlage Kunstrasen / Platz 3,Thusnelda-Lang-Brumann-Str. 14,80637 München",
-   "pairing": "FC Teutonia U15 2-TSV Großhadern U15",
+   "location": "Sportanlage Kunstrasen / Platz 3 | Thusnelda-Lang-Brumann-Str. 14 | 80637 München",
+   "pairing": "FC Teutonia U15 2 – TSV Großhadern U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -393,6 +716,9 @@
    "kickoff": "2027-03-13T11:00:00+00:00",
    "location": "BSA Kronwinkler Straße, Kunstrasen,Kronwinkler Str. 25,81245 München",
    "pairing": "SV Aubing U15-TSV Großhadern U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -402,6 +728,9 @@
    "kickoff": "2027-04-09T16:30:00+00:00",
    "location": "Sportanlage Werdenfelsstraße, Platz 1,Werdenfelsstr. 70,81377 München",
    "pairing": "MTV München U15-TSV Großhadern U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -411,6 +740,9 @@
    "kickoff": "2027-04-17T12:45:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U15-SC Amicitia München U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -420,6 +752,9 @@
    "kickoff": "2027-04-23T17:00:00+00:00",
    "location": "Post-Sport-Park, Platz 1,Franz-Mader-Str. 11,80992 München",
    "pairing": "Post-SV München U15 2-TSV Großhadern U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -429,6 +764,9 @@
    "kickoff": "2027-05-01T12:45:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U15-(SG) Wacker/Hellas U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -438,6 +776,9 @@
    "kickoff": "2027-05-08T13:00:00+00:00",
    "location": "Sportanlage Pullach, Kunstrasen,Gistlstr. 2,82049 Pullach i. Isartal",
    "pairing": "SV Pullach U15 2-TSV Großhadern U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -447,6 +788,9 @@
    "kickoff": "2027-06-05T12:45:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U15-TSV Gräfelfing U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -456,6 +800,9 @@
    "kickoff": "2027-06-12T09:00:00+00:00",
    "location": "BSA Aubinger Straße, Platz 2,Aubinger Str. 12,81243 München",
    "pairing": "TSG Pasing U15-TSV Großhadern U15",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
@@ -465,24 +812,75 @@
    "kickoff": "2027-06-19T12:45:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U15-FC Teutonia U15 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
   },
+  "031KK87VJ4000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-08T08:51:59.331134+00:00",
+   "competition": "U14 (JgL) Gruppe Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest": "TSV Großhadern U14",
+   "guest_plan": "TSV Großhadern U14",
+   "halftime": "3:0",
+   "home": "SpVgg Thalkirchen U14 2",
+   "home_plan": "SpVgg Thalkirchen U14 2",
+   "id": "031KK87VJ4000000VS5489BUVVKNMR0J",
+   "kickoff": "2026-11-07T09:30:00+00:00",
+   "location": "BSA Thalkirchner Straße, Kunstrasen | Thalkirchner Str. 209 | 81371 München",
+   "pairing": "SpVgg Thalkirchen U14 2 – TSV Großhadern U14",
+   "result": "4:3",
+   "st": {
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "kickoff_sent": true,
+    "statuses": [
+     "acknowledged"
+    ]
+   },
+   "team": "TSV Großhadern U14",
+   "team_label": "U14"
+  },
   "031KK87VS8000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U14 (JgL) Gruppe Süd",
+   "competition": "U14 (JgL) Gruppe Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U14",
+   "home_plan": "TSV Turnerbund München U14 2",
    "id": "031KK87VS8000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T11:15:00+00:00",
-   "location": "BSA Agilolfingerstraße, Kunstrasen,Agilolfingerstr. 6,81543 München",
-   "pairing": "TSV Turnerbund München U14 2-TSV Großhadern U14",
+   "location": "BSA Agilolfingerstraße, Kunstrasen | Agilolfingerstr. 6 | 81543 München",
+   "pairing": "TSV Turnerbund München U14 2 – TSV Großhadern U14",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
   "031KK8800G000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U14 (JgL) Gruppe Süd",
+   "competition": "U14 (JgL) Gruppe Süd",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "FC Teutonia U14 2",
+   "home_plan": "TSV Großhadern U14",
    "id": "031KK8800G000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-22T08:00:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern U14-FC Teutonia U14 2",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U14 – FC Teutonia U14 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -492,6 +890,9 @@
    "kickoff": "2027-03-14T08:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U14-SpVgg 1906 Haidhausen U14 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -501,6 +902,9 @@
    "kickoff": "2027-04-10T11:15:00+00:00",
    "location": "SC Amicitia Sportanlage,Dietrichstr. 11,80637 München",
    "pairing": "SC Amicitia München U14-TSV Großhadern U14",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -510,6 +914,9 @@
    "kickoff": "2027-04-18T07:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U14-FC Sportfreunde U14 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -519,6 +926,9 @@
    "kickoff": "2027-04-24T12:45:00+00:00",
    "location": "BSA Graubündener Straße, Kunstrasen,Graubündener Str. 100,81475 München",
    "pairing": "TSV Forstenried U14-TSV Großhadern U14",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -528,6 +938,9 @@
    "kickoff": "2027-05-02T07:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U14-MTV München U14 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -537,6 +950,9 @@
    "kickoff": "2027-05-08T09:30:00+00:00",
    "location": "Sportanlage Planegg, Georgenstraße, Platz 2,Georgenstr. 35,82152 Planegg",
    "pairing": "DJK Würmtal Planegg U14 3-TSV Großhadern U14",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -546,6 +962,9 @@
    "kickoff": "2027-06-06T07:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U14-SpVgg Thalkirchen U14 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -555,6 +974,9 @@
    "kickoff": "2027-06-13T07:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern U14-TSV Turnerbund München U14 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
@@ -564,42 +986,73 @@
    "kickoff": "2027-06-19T10:00:00+00:00",
    "location": "Sportanlage Kunstrasen / Platz 3,Thusnelda-Lang-Brumann-Str. 14,80637 München",
    "pairing": "FC Teutonia U14 2-TSV Großhadern U14",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
   },
   "031KKBB29G000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U12 (JgL) Kreisklasse Süd 1",
+   "competition": "U12 (JgL) Kreisklasse Süd 1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSG Pasing U12",
+   "home_plan": "TSV Großhadern U12",
    "id": "031KKBB29G000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T11:30:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern U12-TSG Pasing U12",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U12 – TSG Pasing U12",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U12",
    "team_label": "U12"
   },
   "031KKBB2B0000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U12 (JgL) Kreisklasse Süd 1",
+   "competition": "U12 (JgL) Kreisklasse Süd 1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U12",
+   "home_plan": "TSV München-Ost U12",
    "id": "031KKBB2B0000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:00:00+00:00",
-   "location": "Sportanlage Sieboldstraße,Sieboldstr. 4,81669 München",
-   "pairing": "TSV München-Ost U12-TSV Großhadern U12",
+   "location": "Sportanlage Sieboldstraße | Sieboldstr. 4 | 81669 München",
+   "pairing": "TSV München-Ost U12 – TSV Großhadern U12",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U12",
    "team_label": "U12"
   },
   "031KKE88T4000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U12 (JgL) Gruppe Süd 3",
+   "competition": "U12 (JgL) Gruppe Süd 3",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U12 2",
+   "home_plan": "SC Amicitia München U12",
    "id": "031KKE88T4000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-08T12:15:00+00:00",
-   "location": "SC Amicitia Sportanlage,Dietrichstr. 11,80637 München",
-   "pairing": "SC Amicitia München U12-TSV Großhadern U12 2",
+   "location": "SC Amicitia Sportanlage | Dietrichstr. 11 | 80637 München",
+   "pairing": "SC Amicitia München U12 – TSV Großhadern U12 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U12 2",
    "team_label": "U12 2"
   },
   "031KKE893O000000VS5489BUVVKNMR0J": {
-   "competition": "Meisterschaften, U12 (JgL) Gruppe Süd 3",
+   "competition": "U12 (JgL) Gruppe Süd 3",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Forstenried U12 3",
+   "home_plan": "TSV Großhadern U12 2",
    "id": "031KKE893O000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-15T12:00:00+00:00",
-   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
-   "pairing": "TSV Großhadern U12 2-TSV Forstenried U12 3",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U12 2 – TSV Forstenried U12 3",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U12 2",
    "team_label": "U12 2"
   },
@@ -609,6 +1062,9 @@
    "kickoff": "2027-02-07T10:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern II-SV Sentilo-Blumenau",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -618,6 +1074,9 @@
    "kickoff": "2027-02-07T13:30:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern-MTV München",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -627,6 +1086,9 @@
    "kickoff": "2027-02-14T10:00:00+00:00",
    "location": "BSA Thalkirchner Straße, Kunstrasen,Thalkirchner Str. 209,81371 München",
    "pairing": "SpVgg Thalkirchen-TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -636,6 +1098,9 @@
    "kickoff": "2027-02-14T12:00:00+00:00",
    "location": "BSA Thalkirchner Straße, Kunstrasen,Thalkirchner Str. 209,81371 München",
    "pairing": "SpVgg Thalkirchen II-TSV Großhadern II",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
@@ -645,6 +1110,9 @@
    "kickoff": "2027-02-21T14:00:00+00:00",
    "location": "BSA Herterichstraße, Kunstrasen,Herterichstr. 141,81476 München",
    "pairing": "TSV Mün.-Solln-TSV Großhadern",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern",
    "team_label": "1. Mannschaft"
   },
@@ -654,24 +1122,34 @@
    "kickoff": "2027-02-21T09:45:00+00:00",
    "location": "BSA Wolkerweg, Kunstrasen,Wolkerweg 17,81375 München",
    "pairing": "FC Neuhadern II-TSV Großhadern II",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
   "032EIBPM54000000VS5489BUVSGKI48U": {
-   "checked": "2026-11-08T08:50:00.000161+00:00",
-   "competition": "Freundschaftsspiele, FS/DJ/K-FS/Z/1",
+   "checked": "2026-11-08T08:55:13.061618+00:00",
+   "competition": "FS/DJ/K-FS/Z/1",
+   "festival": false,
+   "festival_hint": false,
    "guest": "TSV Großhadern U12",
+   "guest_plan": "TSV Großhadern U12",
    "halftime": null,
    "home": "TSV Gilching/Argelsried U12",
+   "home_plan": "TSV Gilching/Argelsried U12",
    "id": "032EIBPM54000000VS5489BUVSGKI48U",
    "kickoff": "2026-11-08T09:00:00+00:00",
    "location": "",
-   "pairing": "TSV Gilching/Argelsried U12-TSV Großhadern U12",
+   "pairing": "TSV Gilching/Argelsried U12 – TSV Großhadern U12",
    "result": null,
    "st": {
     "final_sent": false,
     "goals": [],
-    "kickoff_sent": false
+    "kickoff_sent": false,
+    "statuses": [
+     "cancelled"
+    ]
    },
    "team": "TSV Großhadern U12",
    "team_label": "U12"
@@ -682,42 +1160,89 @@
    "kickoff": "2027-01-31T10:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2,Ludwig-Hunger-Str. 11,81375 München",
    "pairing": "TSV Großhadern II-SC Amicitia München",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern 2",
    "team_label": "2. Mannschaft"
   },
   "032HF4FQLG000000VS5489BUVSGKI48U": {
-   "competition": "Freundschaftsspiele, FS/EJ/K-FS/M/1",
+   "competition": "FS/EJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U10",
+   "home_plan": "FC Unterföhring U9",
    "id": "032HF4FQLG000000VS5489BUVSGKI48U",
    "kickoff": "2026-11-08T11:30:00+00:00",
-   "location": "Sportplatz Unterer Aschheimer Weg,Unterer Aschheimer Weg 5,85774 Unterföhring",
-   "pairing": "FC Unterföhring U9-TSV Großhadern U10",
+   "location": "Sportplatz Unterer Aschheimer Weg | Unterer Aschheimer Weg 5 | 85774 Unterföhring",
+   "pairing": "FC Unterföhring U9 – TSV Großhadern U10",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
   },
   "032HP928V4000000VS5489BTVU989P58": {
-   "competition": "Freundschaftsspiele, FS/BJ/K-FS/Z/1",
+   "competition": "FS/BJ/K-FS/Z/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U17",
+   "home_plan": "FC Deisenhofen 3",
    "id": "032HP928V4000000VS5489BTVU989P58",
    "kickoff": "2026-11-13T19:00:00+00:00",
-   "location": "Sportanlage Deisenhofen, Kunstrasen,Am Sportplatz 22,82041 Deisenhofen",
-   "pairing": "FC Deisenhofen 3-TSV Großhadern U17",
+   "location": "Sportanlage Deisenhofen, Kunstrasen | Am Sportplatz 22 | 82041 Deisenhofen",
+   "pairing": "FC Deisenhofen 3 – TSV Großhadern U17",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U17",
    "team_label": "U17"
   },
+  "032J6CNP4C000000VS5489BUVSGKI48U": {
+   "competition": "FS/EJ/K-FS/Z/1",
+   "festival": true,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U9",
+   "home_plan": "TSV Gilching/Argelsried 5",
+   "id": "032J6CNP4C000000VS5489BUVSGKI48U",
+   "kickoff": "2026-11-15T11:30:00+00:00",
+   "location": "Sportanlage Gilching, Kunstrasen | Talhofstr. 13 | 82205 Gilching",
+   "pairing": "TSV Gilching/Argelsried 5 – TSV Großhadern U9",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern U9",
+   "team_label": "U9"
+  },
   "032KCFK02O000000VS5489BTVSIO88SN": {
-   "competition": "Freundschaftsspiele, FS/EJ/K-FS/M/1",
+   "competition": "FS/EJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U10",
+   "home_plan": "TSV Neuried E1",
    "id": "032KCFK02O000000VS5489BTVSIO88SN",
    "kickoff": "2026-11-22T09:00:00+00:00",
-   "location": "Sportanlage Neuried, Kunstrasen,Am Sportpark 8,82061 Neuried",
-   "pairing": "TSV Neuried E1-TSV Großhadern U10",
+   "location": "Sportanlage Neuried, Kunstrasen | Am Sportpark 8 | 82061 Neuried",
+   "pairing": "TSV Neuried E1 – TSV Großhadern U10",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
   },
   "032KFEI5BK000000VS5489BTVSIO88SN": {
-   "competition": "Freundschaftsspiele, FS/DJ/K-FS/M/1",
+   "competition": "FS/DJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U12 2",
+   "home_plan": "SV WB Allianz München U12 2",
    "id": "032KFEI5BK000000VS5489BTVSIO88SN",
    "kickoff": "2026-11-21T12:30:00+00:00",
-   "location": "Sportcampus Neufreimann, Kunstrasen,Henny-Seidemann-Straße 19,80939 München",
-   "pairing": "SV WB Allianz München U12 2-TSV Großhadern U12 2",
+   "location": "Sportcampus Neufreimann, Kunstrasen | Henny-Seidemann-Straße 19 | 80939 München",
+   "pairing": "SV WB Allianz München U12 2 – TSV Großhadern U12 2",
+   "st": {
+    "goals": []
+   },
    "team": "TSV Großhadern U12 2",
    "team_label": "U12 2"
   }
