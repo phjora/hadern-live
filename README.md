@@ -5,15 +5,15 @@ Push-Nachrichten für alle Spiele des TSV Großhadern – Anpfiff, jedes Tor (be
 ## Was passiert
 
 1. **Mannschaften:** Einmal täglich liest das Skript von der BFV-Vereinsseite alle Teams aus – auch nach Saisonwechsel ohne Handarbeit.
-2. **Spielplan:** Über den offiziellen iCal-Export des BFV (pro Team).
-3. **Beobachtung:** Ab 10 Min. vor Anpfiff wird die Spielseite jede Minute gelesen (ca. 2,5 h lang). Danach wird bis zu 48 h alle 20 Min. nach einem nachgetragenen Ergebnis geschaut.
-4. **Push:** über [ntfy](https://ntfy.sh) – kostenlose App, kein Account nötig.
-5. **Kalender:** `docs/ergebnisse.ics` enthält alle Spiele, Ergebnisse stehen im Titel („U17: SV Planegg – TSV Großhadern U17 1:3“).
-
-Push-Beispiele:
-- `⚽ U17: TOR! 1:0` – 23' Max Mustermann
-- `1. Mannschaft: Gegentor 1:1` – 41' …
-- `U17: Endstand 3:1 ✅ Sieg` – (HZ 1:1)
+2. **Spielplan:** aus der Spielplan-Liste jeder Mannschaftsseite (auch Festival-Teams ohne Ergebnisse).
+3. **Pushes** über [ntfy](https://ntfy.sh):
+   - 📅 **Spieltag!** – morgens (ab 7 Uhr) eine Übersicht aller Spiele des Tages
+   - ▶️ **Anstoß** – zur Anstoßzeit (bzw. sobald der Liveticker startet)
+   - ⚽ **Tore** – nur bei Spielen mit BFV-Liveticker
+   - 🏁 **Abpfiff** – wenn der Ticker endet, mit Spielstand laut Ticker
+   - 📋 **Ergebnis eingetragen** – sobald das offizielle Ergebnis beim BFV steht (ohne Ticker: sobald es eingetragen ist; mit Ticker: sobald der Spielleiter bestätigt). Weicht es vom Ticker ab, steht das dabei.
+   - **Festivals (U9/U8):** nur Übersicht + Anstoß-Erinnerung, kein Ergebnis
+4. **Kalender:** `docs/ergebnisse.ics` enthält alle Spiele, Ergebnisse stehen im Titel.
 
 ## Einrichten (ca. 10 Minuten)
 
@@ -27,7 +27,7 @@ Push-Beispiele:
 ## Hinweise
 
 - **Tore live** gibt es nur, wenn jemand beim BFV tickert. Ohne Ticker kommt der Endstand, sobald das Ergebnis eingetragen ist.
-- **U9/U8** haben beim BFV keinen Spielplan-Export (keine offiziellen Ergebnisse) – die fehlen also.
+- Welche Teams als „ohne Ergebnis“ gelten, steht in `config.json` unter `ohne_ergebnis` (Standard: U9, U8, U7). Spiele mit „Kinderfestival“ im Namen werden immer so behandelt.
 - **GitHub-Cron ist unpünktlich** (am Wochenende teils 10–20 Min. Verspätung). Deshalb bleibt ein Lauf aktiv, solange Spiele laufen, und pollt dann selbst minütlich.
 - **Datenquelle:** BFV-Webseite, keine offizielle API. Wenn der BFV die Seite umbaut, kann der Tracker brechen – er stürzt dann nicht ab, sondern meldet Fehler im Log. Nur für den internen Vereinsgebrauch gedacht.
 - Lokal testen: `pip install -r requirements.txt && python tracker.py --dry-run`
