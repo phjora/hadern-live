@@ -2,20 +2,41 @@
  "digest_date": "2026-11-08",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
+   "checked": "2026-11-08T16:03:00.740582+00:00",
    "competition": "Kreisliga München",
    "festival": false,
    "festival_hint": false,
+   "guest": "SV Helios-Daglfing",
    "guest_plan": "SV Helios-Daglfing",
+   "halftime": "0:0",
+   "home": "TSV Großhadern",
    "home_plan": "TSV Großhadern",
    "id": "031BSK5UCS000000VS5489BTVUS470OH",
    "kickoff": "2026-11-08T13:00:00+00:00",
    "location": "Sportanlage Heiglhofstraße | Heiglhofstr. 25 | 81377 München",
    "pairing": "TSV Großhadern – SV Helios-Daglfing",
+   "result": "2:0",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [
+     1,
+     2
+    ],
+    "kickoff_sent": true,
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "live",
+     "finished",
+     "acknowledged"
+    ],
+    "ticker": true,
+    "was_live": true,
+    "whistle_result": "2:0",
+    "whistle_sent": true
    },
    "team": "TSV Großhadern",
-   "team_label": "1. Mannschaft"
+   "team_label": "Erste"
   },
   "031BSK5UOS000000VS5489BTVUS470OH": {
    "competition": "Kreisliga München",
@@ -31,7 +52,7 @@
     "goals": []
    },
    "team": "TSV Großhadern",
-   "team_label": "1. Mannschaft"
+   "team_label": "Erste"
   },
   "031BSK61T8000000VS5489BTVUS470OH": {
    "competition": "Kreisliga München",
@@ -47,7 +68,7 @@
     "goals": []
    },
    "team": "TSV Großhadern",
-   "team_label": "1. Mannschaft"
+   "team_label": "Erste"
   },
   "031BSK63LK000000VS5489BTVUS470OH": {
    "competition": "Meisterschaften, Kreisliga München",
@@ -195,7 +216,7 @@
     "goals": []
    },
    "team": "TSV Großhadern 2",
-   "team_label": "2. Mannschaft"
+   "team_label": "Zweite"
   },
   "031FNQH8O0000000VS5489BUVSJ4CRAP": {
    "competition": "113 Kreisklasse 3",
@@ -211,7 +232,7 @@
     "goals": []
    },
    "team": "TSV Großhadern 2",
-   "team_label": "2. Mannschaft"
+   "team_label": "Zweite"
   },
   "031FNQH8U8000000VS5489BUVSJ4CRAP": {
    "checked": "2026-11-08T08:51:59.331134+00:00",
@@ -241,7 +262,7 @@
     ]
    },
    "team": "TSV Großhadern 2",
-   "team_label": "2. Mannschaft"
+   "team_label": "Zweite"
   },
   "031FNQH9D4000000VS5489BUVSJ4CRAP": {
    "competition": "Meisterschaften, 113 Kreisklasse 3",
@@ -401,7 +422,7 @@
     "goals": []
    },
    "team": "TSV Großhadern 2",
-   "team_label": "2. Mannschaft"
+   "team_label": "Zweite"
   },
   "031K543LAS000000VS5489BUVVKNMR0J": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -624,7 +645,7 @@
     ]
    },
    "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
-   "team_label": "U19 (SG)"
+   "team_label": "U19"
   },
   "031KK1KRTC000000VS5489BUVVKNMR0J": {
    "competition": "U19 (A-Jun.) Kreisklasse Süd",
@@ -640,20 +661,37 @@
     "goals": []
    },
    "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
-   "team_label": "U19 (SG)"
+   "team_label": "U19"
   },
   "031KK28HLC000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-08T16:16:00.742010+00:00",
    "competition": "U17 (B-Jun.) Kreisliga Süd 2",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U17",
    "guest_plan": "TSV Großhadern U17",
+   "halftime": "2:0",
+   "home": "SV Planegg-Krailling U17 2",
    "home_plan": "SV Planegg-Krailling U17 2",
    "id": "031KK28HLC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-08T14:00:00+00:00",
    "location": "Georg Heide Stadion Planegg | Hofmarkstr. 51 | 82152 Planegg",
    "pairing": "SV Planegg-Krailling U17 2 – TSV Großhadern U17",
+   "result": "3:1",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "live",
+     "acknowledged"
+    ],
+    "ticker": true,
+    "was_live": true,
+    "whistle_result": "3:1",
+    "whistle_sent": true
    },
    "team": "TSV Großhadern U17",
    "team_label": "U17"
@@ -1037,17 +1075,35 @@
    "team_label": "U12"
   },
   "031KKE88T4000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-08T15:21:38.314989+00:00",
    "competition": "U12 (JgL) Gruppe Süd 3",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U12 2",
    "guest_plan": "TSV Großhadern U12 2",
+   "halftime": "0:2",
+   "home": "SC Amicitia München U12",
    "home_plan": "SC Amicitia München U12",
    "id": "031KKE88T4000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-08T12:15:00+00:00",
    "location": "SC Amicitia Sportanlage | Dietrichstr. 11 | 80637 München",
    "pairing": "SC Amicitia München U12 – TSV Großhadern U12 2",
+   "result": "3:2",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "kickoff_sent": true,
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
    "team": "TSV Großhadern U12 2",
    "team_label": "U12 2"
@@ -1179,7 +1235,7 @@
    "team_label": "2. Mannschaft"
   },
   "032HF4FQLG000000VS5489BUVSGKI48U": {
-   "checked": "2026-11-08T11:35:00.000378+00:00",
+   "checked": "2026-11-08T17:17:24.060879+00:00",
    "competition": "FS/EJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
