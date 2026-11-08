@@ -3,6 +3,7 @@ name: Ergebnistracker
 on:
   schedule:
     # Zeiten in UTC (Winter: +1 h, Sommer: +2 h)
+    - cron: "5 6 * * *"           # täglich ~07:05 Uhr: Spieltag-Übersicht
     - cron: "*/20 7-19 * * 0,6"   # Sa/So 08–20 Uhr alle 20 Minuten
     - cron: "*/30 15-19 * * 1-5"  # Mo–Fr 16–20 Uhr alle 30 Minuten (Jugendspiele unter der Woche)
   workflow_dispatch: {}            # manuell starten über "Run workflow"
