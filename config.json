@@ -4,9 +4,9 @@
  "club_name": "TSV Großhadern",
  "calendar_name": "TSV Großhadern – Spiele & Ergebnisse",
  "labels": {
-  "TSV Großhadern": "1. Mannschaft",
-  "TSV Großhadern 2": "2. Mannschaft",
-  "(SG) Großhadern/Sentilo-B./BSC Sendling U19": "U19 (SG)"
+  "TSV Großhadern": "Erste",
+  "TSV Großhadern 2": "Zweite",
+  "(SG) Großhadern/Sentilo-B./BSC Sendling U19": "U19"
  },
  "notify": {
   "kickoff": true
@@ -15,5 +15,50 @@
   "U9",
   "U8",
   "U7"
- ]
+ ],
+ "club_key": "Großhadern",
+ "trainer": {
+  "Erste": [
+   "Daki"
+  ],
+  "Zweite": [
+   "Patrick"
+  ],
+  "U19": [
+   "DJ",
+   "Bloch"
+  ],
+  "U17": [
+   "Philipp",
+   "Eric",
+   "Zino"
+  ],
+  "U15": [
+   "Daki"
+  ],
+  "U14": [
+   "Can"
+  ],
+  "U12": [
+   "Anton",
+   "Zino"
+  ],
+  "U12 2": [
+   "Ben",
+   "Josi"
+  ],
+  "U10": [
+   "Benno"
+  ],
+  "U10 2": [
+   "Kawa"
+  ],
+  "U9": [
+   "Philipp",
+   "Eric"
+  ],
+  "U8": [
+   "Anton"
+  ]
+ }
 }
