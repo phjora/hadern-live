@@ -10,5 +10,10 @@
  },
  "notify": {
   "kickoff": true
- }
+ },
+ "ohne_ergebnis": [
+  "U9",
+  "U8",
+  "U7"
+ ]
 }
