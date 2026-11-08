@@ -47,6 +47,8 @@ LIVE_WINDOW = timedelta(minutes=150)     # so lange wird minütlich gepollt
 RESULT_WINDOW = timedelta(hours=48)      # so lange warten wir auf ein nachgetragenes Ergebnis
 LIVE_POLL_SECONDS = 60
 MAX_RUNTIME = timedelta(hours=5, minutes=40)  # GitHub-Limit sind 6 h
+CHAIN_UNTIL_HOUR = 22  # bis dahin startet sich der Tracker bei Bedarf selbst neu
+CHAIN_FLAG = ROOT / ".chain"
 
 session = requests.Session()
 session.headers["User-Agent"] = UA
@@ -57,7 +59,7 @@ def now_utc() -> datetime:
 
 
 def log(*a):
-    print(datetime.now().strftime("%H:%M:%S"), *a, flush=True)
+    print(datetime.now(TZ).strftime("%H:%M:%S"), *a, flush=True)
 
 
 # ---------------------------------------------------------------------------
@@ -515,17 +517,19 @@ def refresh_schedule(cfg: dict, state: dict):
         del games[gid]
 
 
-def one_pass(cfg: dict, state: dict, dry_run: bool) -> tuple[int, datetime | None]:
-    """Prüft alle relevanten Spiele. Gibt (#Spiele im Live-Fenster, nächster Anpfiff) zurück."""
+def one_pass(cfg: dict, state: dict, dry_run: bool) -> datetime | None:
+    """Prüft alle fälligen Spiele. Gibt zurück, wann als Nächstes etwas zu prüfen ist (oder None)."""
     now = now_utc()
-    live_count, next_kickoff = 0, None
+    next_due: datetime | None = None
+
+    def due(t: datetime):
+        nonlocal next_due
+        next_due = t if next_due is None else min(next_due, t)
+
     for g in state.get("games", {}).values():
         g.setdefault("st", {"goals": []})
         st = g["st"]
         kickoff = datetime.fromisoformat(g["kickoff"])
-        if kickoff - PRE_KICKOFF > now:
-            next_kickoff = min(next_kickoff or kickoff, kickoff)
-            continue
         if st.get("final_sent") or now > kickoff + RESULT_WINDOW:
             continue
         if g.get("festival"):
@@ -536,11 +540,17 @@ def one_pass(cfg: dict, state: dict, dry_run: bool) -> tuple[int, datetime | Non
                 send_kickoff(g, cfg, dry_run)
                 st["final_sent"] = True
             else:
-                live_count += 1
+                due(kickoff)
+            continue
+        if now < kickoff - PRE_KICKOFF:
+            due(kickoff - PRE_KICKOFF)
             continue
         in_live = now <= kickoff + LIVE_WINDOW
-        last = g.get("checked")
-        if not in_live and last and now - datetime.fromisoformat(last) < timedelta(minutes=20):
+        last = datetime.fromisoformat(g["checked"]) if g.get("checked") else None
+        interval = timedelta(seconds=LIVE_POLL_SECONDS) if (st.get("was_live") or st.get("ticker")) \
+            else timedelta(minutes=5) if in_live else timedelta(minutes=20)
+        if last and now - last < interval and not (now >= kickoff and not st.get("kickoff_sent")):
+            due(last + interval)
             continue
         try:
             info = fetch_match(g["id"])
@@ -548,15 +558,24 @@ def one_pass(cfg: dict, state: dict, dry_run: bool) -> tuple[int, datetime | Non
             log(f"{g['team_label']} {g['pairing']}: Fehler {e}")
             if now >= kickoff:
                 send_kickoff(g, cfg, dry_run)
+            due(now + timedelta(minutes=5))
             continue
         g["checked"] = now.isoformat()
+        if info["ticker"] or info["live"]:
+            st["ticker"] = True
         process_match(g, info, cfg, dry_run)
-        if in_live and not st.get("final_sent"):
-            live_count += 1
+        if not st.get("final_sent"):
+            interval = timedelta(seconds=LIVE_POLL_SECONDS) if (st.get("was_live") or st.get("ticker")) \
+                else timedelta(minutes=5) if in_live else timedelta(minutes=20)
+            nxt = now + interval
+            if now < kickoff:
+                nxt = min(nxt, kickoff)  # Anstoß pünktlich melden
+            due(nxt)
         log(f"{g['team_label']}: {info['home']} – {info['guest']} {info['result'] or '-:-'}"
-            f" [{info.get('status')}]{' LIVE ' + str(info['live_minute'] or '') if info['live'] else ''}")
+            f" [{info.get('status')}]{' TICKER' if st.get('ticker') else ''}"
+            f"{' LIVE ' + str(info['live_minute'] or '') if info['live'] else ''}")
         time.sleep(1)
-    return live_count, next_kickoff
+    return next_due
 
 
 def main():
@@ -569,30 +588,30 @@ def main():
     state = load_json(STATE_PATH, {})
     started = now_utc()
 
-    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
+    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" and os.environ.get("CHAINED") != "true":
         push("✅ Ergebnistracker: Testnachricht", "Manueller Start – die Verbindung zur App funktioniert.",
              "white_check_mark", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "low", args.dry_run)
 
     refresh_schedule(cfg, state)
     send_digest(cfg, state, args.dry_run)
+    deadline = started + MAX_RUNTIME
+    chain_until = datetime.now(TZ).replace(hour=CHAIN_UNTIL_HOUR, minute=0, second=0, microsecond=0)
     while True:
-        live, next_kickoff = one_pass(cfg, state, args.dry_run)
+        next_due = one_pass(cfg, state, args.dry_run)
         save_json(STATE_PATH, state)
         write_ics(state.get("games", {}), cfg)
-        if not args.watch:
+        if not args.watch or next_due is None:
             break
-        if now_utc() - started > MAX_RUNTIME:
-            log("Maximale Laufzeit erreicht")
+        if next_due >= deadline:
+            # Laufzeit reicht nicht: Staffelübergabe an einen neuen Lauf, wenn heute noch etwas ansteht
+            if next_due <= chain_until:
+                CHAIN_FLAG.write_text(next_due.isoformat())
+                log(f"Übergabe an neuen Lauf (nächste Prüfung {local_time(next_due.isoformat())})")
             break
-        if live:
-            time.sleep(LIVE_POLL_SECONDS)
-            continue
-        if next_kickoff and next_kickoff - PRE_KICKOFF - now_utc() < timedelta(minutes=40):
-            wait = max(30, (next_kickoff - PRE_KICKOFF - now_utc()).total_seconds())
-            log(f"Nächstes Spiel bald – warte {int(wait)} s")
-            time.sleep(wait)
-            continue
-        break
+        wait = max(20, (next_due - now_utc()).total_seconds())
+        if wait > 120:
+            log(f"Warte bis {local_time(next_due.isoformat())}")
+        time.sleep(wait)
     log("fertig")
 
 
