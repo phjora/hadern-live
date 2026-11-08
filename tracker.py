@@ -296,6 +296,11 @@ def push(title: str, message: str, tags: str, url: str, priority: str = "default
         "priority": {"min": 1, "low": 2, "default": 3, "high": 4, "max": 5}.get(priority, 3),
         "click": url,
     }
+    # Spiel-Link: Antippen öffnet FUSSBALL.DE (App, falls installiert), Knopf öffnet die BFV-Seite
+    m = re.search(r"/ergebnisse/spiel/-/([A-Z0-9]{32})", url)
+    if m:
+        body["click"] = f"https://www.fussball.de/spiel/spiel/-/spiel/{m.group(1)}"
+        body["actions"] = [{"action": "view", "label": "BFV", "url": url, "clear": False}]
     try:
         r = session.post(server, json=body, timeout=15)
         if r.status_code >= 300:
