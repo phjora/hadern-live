@@ -1129,7 +1129,7 @@
    "team_label": "2. Mannschaft"
   },
   "032EIBPM54000000VS5489BUVSGKI48U": {
-   "checked": "2026-11-08T08:55:13.061618+00:00",
+   "checked": "2026-11-08T08:56:46.668864+00:00",
    "competition": "FS/DJ/K-FS/Z/1",
    "festival": false,
    "festival_hint": false,
@@ -1144,7 +1144,7 @@
    "pairing": "TSV Gilching/Argelsried U12 – TSV Großhadern U12",
    "result": null,
    "st": {
-    "final_sent": false,
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": false,
     "statuses": [
