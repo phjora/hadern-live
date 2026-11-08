@@ -530,17 +530,26 @@
    "team_label": "U10"
   },
   "031KJUIVGO000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-08T09:55:09.453214+00:00",
    "competition": "U10 (E-J) Süd Magenta",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U10 2",
    "guest_plan": "TSV Großhadern U10 2",
+   "halftime": null,
+   "home": "BSC Sendling 1918 München U10 2",
    "home_plan": "BSC Sendling 1918 München U10 2",
    "id": "031KJUIVGO000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-08T10:00:00+00:00",
    "location": "Städt. Sportanlage / Siegenburgstr. - Kunstrasenplatz 3 | Siegenburger Str. 51 | 81373 München",
    "pairing": "BSC Sendling 1918 München U10 2 – TSV Großhadern U10 2",
+   "result": "- : -",
    "st": {
-    "goals": []
+    "goals": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U10 2",
    "team_label": "U10 2"
