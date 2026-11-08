@@ -530,26 +530,28 @@
    "team_label": "U10"
   },
   "031KJUIVGO000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-08T10:10:09.453733+00:00",
+   "checked": "2026-11-08T11:15:42.537565+00:00",
    "competition": "U10 (E-J) Süd Magenta",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern U10 2",
    "guest_plan": "TSV Großhadern U10 2",
-   "halftime": null,
+   "halftime": "1:3",
    "home": "BSC Sendling 1918 München U10 2",
    "home_plan": "BSC Sendling 1918 München U10 2",
    "id": "031KJUIVGO000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-08T10:00:00+00:00",
    "location": "Städt. Sportanlage / Siegenburgstr. - Kunstrasenplatz 3 | Siegenburger Str. 51 | 81373 München",
    "pairing": "BSC Sendling 1918 München U10 2 – TSV Großhadern U10 2",
-   "result": null,
+   "result": "4:5",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "finished"
     ]
    },
    "team": "TSV Großhadern U10 2",
@@ -1177,17 +1179,27 @@
    "team_label": "2. Mannschaft"
   },
   "032HF4FQLG000000VS5489BUVSGKI48U": {
+   "checked": "2026-11-08T11:35:00.000378+00:00",
    "competition": "FS/EJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U10",
    "guest_plan": "TSV Großhadern U10",
+   "halftime": null,
+   "home": "FC Unterföhring U9",
    "home_plan": "FC Unterföhring U9",
    "id": "032HF4FQLG000000VS5489BUVSGKI48U",
    "kickoff": "2026-11-08T11:30:00+00:00",
    "location": "Sportplatz Unterer Aschheimer Weg | Unterer Aschheimer Weg 5 | 85774 Unterföhring",
    "pairing": "FC Unterföhring U9 – TSV Großhadern U10",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
