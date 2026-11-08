@@ -257,11 +257,18 @@ def parse_match_page(html: str, match_id: str, font_bytes: bytes | None = None) 
         "home_club": match["homeTeam"].get("clubId"),
         "guest": m["guestTeam"]["name"],
         "guest_club": match["guestTeam"].get("clubId"),
-        "result": res.get("text") or None,
-        "halftime": (res.get("resultHalfTime") or "").replace(" ", "").strip("()") or None,
+        "result": _score(res.get("text")),
+        "halftime": _score((res.get("resultHalfTime") or "").replace(" ", "").strip("()")),
         "goals": sorted(goals, key=lambda g: g.get("goalId", 0)),
         "competition": m.get("competitionName"),
     }
+
+
+def _score(text: str | None) -> str | None:
+    """Nur echte Spielstände (mit Ziffern) zählen – „- : -“ heißt: noch kein Ergebnis."""
+    if not text or not re.search(r"\d", text):
+        return None
+    return re.sub(r"\s+", "", text)
 
 
 def fetch_match(match_id: str) -> dict:
