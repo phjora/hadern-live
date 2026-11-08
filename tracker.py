@@ -345,6 +345,25 @@ def process_match(game: dict, info: dict, cfg: dict, dry_run: bool) -> bool:
         st.setdefault("statuses", []).append(info["status"])
         log(f"{label}: Status -> {info['status']}")
 
+    # Absage
+    if info.get("status") == "cancelled":
+        if not st.get("final_sent"):
+            st["final_sent"] = True
+            if now_utc() < kickoff + timedelta(hours=3):
+                push(f"🚫 {label}: Spiel abgesagt", pairing, "no_entry", url, "default", dry_run)
+        return True
+
+    # Zum ersten Mal gesehen und längst vorbei: still übernehmen, nichts nachholen
+    if not st.get("seen"):
+        st["seen"] = True
+        if not st.get("kickoff_sent") and now_utc() > kickoff + timedelta(minutes=20):
+            st["kickoff_sent"] = True
+            st["goals"] = [g.get("goalId") for g in info["goals"]]
+            game["result"], game["halftime"] = info["result"], info["halftime"]
+            if info["result"] and not info["live"]:
+                st["whistle_sent"] = st["final_sent"] = True
+            return st.get("final_sent", False)
+
     if info["live"] or now_utc() >= kickoff:
         send_kickoff(game, cfg, dry_run)
     if info["live"]:
@@ -505,6 +524,8 @@ def one_pass(cfg: dict, state: dict, dry_run: bool) -> tuple[int, datetime | Non
             continue
         if g.get("festival"):
             # Festivals: nur Anstoß-Erinnerung, kein Ergebnis
+            if now > kickoff + timedelta(minutes=20):
+                st["kickoff_sent"] = True  # längst vorbei: nicht nachholen
             if now >= kickoff:
                 send_kickoff(g, cfg, dry_run)
                 st["final_sent"] = True
