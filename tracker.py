@@ -336,6 +336,42 @@ def local_time(iso: str) -> str:
     return datetime.fromisoformat(iso).astimezone(TZ).strftime("%H:%M")
 
 
+def _short(name: str) -> str:
+    """Gegnername ohne Altersklasse/Zusätze: 'SV Planegg-Krailling U17 2' -> 'SV Planegg-Krailling'."""
+    name = re.sub(r"\s*-\s*Kinderfestival", "", name, flags=re.I)
+    name = re.sub(r"\s+(U\d+|[A-G]\d?)(\s+\d+)?$", "", name)
+    return re.sub(r"\s+(2|3|4|II|III)$", "", name).strip()
+
+
+def opponent(game: dict, cfg: dict, home: str | None = None, guest: str | None = None) -> str:
+    """'gg. Gegner (H)' bzw. '(A)' aus Haderner Sicht."""
+    home = home or game.get("home_plan") or game.get("home") or ""
+    guest = guest or game.get("guest_plan") or game.get("guest") or ""
+    key = cfg.get("club_key", "Großhadern")
+    if key in home and key not in guest:
+        return f"gg. {_short(guest)} (H)"
+    if key in guest and key not in home:
+        return f"gg. {_short(home)} (A)"
+    return f"{home} – {guest}"
+
+
+def ours_first(score: str | None, side: str | None) -> str | None:
+    """'1:3' (Heim:Gast) -> '3:1' wenn Hadern Gast ist."""
+    if not score or ":" not in score or side != "guest":
+        return score
+    a, b = score.split(":", 1)
+    return f"{b}:{a}"
+
+
+def verdict_emoji(score: str | None) -> str:
+    """Emoji für Ergebnis aus Haderner Sicht ('3:1')."""
+    try:
+        mine, theirs = (int(x) for x in (score or "").split(":"))
+    except ValueError:
+        return ""
+    return "✅" if mine > theirs else "❌" if mine < theirs else "🤝"
+
+
 def send_kickoff(game: dict, cfg: dict, dry_run: bool):
     st = game["st"]
     if st.get("kickoff_sent"):
@@ -343,9 +379,8 @@ def send_kickoff(game: dict, cfg: dict, dry_run: bool):
     st["kickoff_sent"] = True
     if not cfg.get("notify", {}).get("kickoff", True):
         return
-    note = "\n(Festival – ohne Ergebnis)" if game.get("festival") else ""
-    push(f"▶️ {game['team_label']}: Anstoß", f"{game['pairing']}{note}", "stopwatch",
-         f"{BFV}/ergebnisse/spiel/-/{game['id']}", "low", dry_run)
+    title = f"{game['team_label']} · {'Festival' if game.get('festival') else 'Anpfiff'}"
+    push(title, opponent(game, cfg), "", f"{BFV}/ergebnisse/spiel/-/{game['id']}", "low", dry_run)
 
 
 FINAL_STATUSES = {"acknowledged"}  # Ergebnis vom Spielleiter bestätigt (beobachtet)
@@ -356,8 +391,8 @@ def process_match(game: dict, info: dict, cfg: dict, dry_run: bool) -> bool:
     st = game["st"]
     label = game["team_label"]
     url = f"{BFV}/ergebnisse/spiel/-/{game['id']}"
-    pairing = f"{info['home']} – {info['guest']}"
     side = our_side(info, cfg["club_id"])
+    pairing = opponent(game, cfg, info["home"], info["guest"])
     kickoff = datetime.fromisoformat(game["kickoff"])
 
     # Status-Verlauf mitschreiben (zum Lernen, welche Werte der BFV nutzt)
@@ -370,7 +405,7 @@ def process_match(game: dict, info: dict, cfg: dict, dry_run: bool) -> bool:
         if not st.get("final_sent"):
             st["final_sent"] = True
             if now_utc() < kickoff + timedelta(hours=3):
-                push(f"🚫 {label}: Spiel abgesagt", pairing, "no_entry", url, "default", dry_run)
+                push(f"{label} · abgesagt 🚫", pairing, "", url, "default", dry_run)
         return True
 
     # Zum ersten Mal gesehen und längst vorbei: still übernehmen, nichts nachholen
@@ -399,37 +434,38 @@ def process_match(game: dict, info: dict, cfg: dict, dry_run: bool) -> bool:
         minute = g.get("minute") or "?"
         if g.get("addMinute"):
             minute += f"+{g['addMinute']}"
-        scorer = re.sub(r"\s*\(11m\)", "", g.get("name") or "unbekannt")
-        kind = {"penalty": " (Elfmeter)", "owngoal": " (Eigentor)"}.get(g.get("type"), "")
+        scorer = re.sub(r"\s*\(11m\)", "", g.get("name") or "")
+        kind = {"penalty": " (11m)", "owngoal": " (ET)"}.get(g.get("type"), "")
+        score = ours_first(g.get("score"), side)
         if ours:
-            title, tags, prio = f"⚽ {label}: TOR! {g.get('score')}", "soccer,tada", "high"
+            title, prio, who = f"{label} · {score} ⚽", "high", f"{scorer}{kind}" if scorer and scorer != "k.A." else "Tor"
         else:
-            title, tags, prio = f"{label}: Gegentor {g.get('score')}", "soccer", "default"
-        push(title, f"{minute}' {scorer}{kind}\n{pairing}", tags, url, prio, dry_run)
+            title, prio, who = f"{label} · {score}", "default", "Gegentor"
+        push(title, f"{minute}' {who}", "", url, prio, dry_run)
 
     game["result"] = info["result"]
     game["halftime"] = info["halftime"]
     game["home"], game["guest"] = info["home"], info["guest"]
-    ht = f" (HZ {info['halftime']})" if info["halftime"] else ""
+    ht = f" · HZ {ours_first(info['halftime'], side)}" if info["halftime"] else ""
+    mine = ours_first(info["result"], side)
 
     # Abpfiff: Ticker war live und ist es nicht mehr
     if st.get("was_live") and not info["live"] and not st.get("whistle_sent"):
         st["whistle_sent"] = True
         st["whistle_result"] = info["result"]
-        res = info["result"] or "?"
-        push(f"🏁 {label}: Abpfiff {res}{_verdict(info['result'], side)}",
-             f"{pairing}{ht}\n(laut Ticker – offizielles Ergebnis folgt)", "checkered_flag", url, "default", dry_run)
+        push(f"{label} · {mine or '?'} {verdict_emoji(mine)}".rstrip(),
+             f"{pairing}{ht} · vorläufig", "", url, "default", dry_run)
 
     # Ergebnis offiziell eingetragen
     over = not info["live"] and now_utc() > kickoff + timedelta(minutes=60)
     official = info["result"] and over and (not st.get("was_live") or info.get("status") in FINAL_STATUSES)
     if official and not st.get("final_sent"):
         st["final_sent"] = True
-        note = ""
+        note = " · offiziell"
         if st.get("whistle_result") and st["whistle_result"] != info["result"]:
-            note = f"\nKorrigiert (Ticker: {st['whistle_result']})"
-        push(f"📋 {label}: Ergebnis eingetragen {info['result']}{_verdict(info['result'], side)}",
-             f"{pairing}{ht}{note}", "white_check_mark", url, "default", dry_run)
+            note = f" · korrigiert (Ticker {ours_first(st['whistle_result'], side)})"
+        push(f"{label} · {mine} {verdict_emoji(mine)}".rstrip(),
+             f"{pairing}{ht}{note if st.get('was_live') else ''}", "", url, "default", dry_run)
         return True
     return False
 
@@ -450,11 +486,12 @@ def send_digest(cfg: dict, state: dict, dry_run: bool):
         return
     lines = []
     for g in sorted(todays, key=lambda x: x["kickoff"]):
-        extra = " (Festival)" if g.get("festival") else ""
-        lines.append(f"{local_time(g['kickoff'])} {g['team_label']}: {g['pairing']}{extra}")
+        opp = opponent(g, cfg).replace("gg. ", "")
+        extra = " 🎪" if g.get("festival") else ""
+        lines.append(f"{local_time(g['kickoff'])} {g['team_label']} – {opp}{extra}")
     n = len(todays)
-    push(f"📅 Spieltag! {n} {'Spiel' if n == 1 else 'Spiele'} heute", "\n".join(lines),
-         "calendar", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "default", dry_run)
+    push(f"📅 {n} {'Spiel' if n == 1 else 'Spiele'} heute", "\n".join(lines),
+         "", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "default", dry_run)
 
 
 # ---------------------------------------------------------------------------
@@ -601,8 +638,8 @@ def main():
     started = now_utc()
 
     if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" and os.environ.get("CHAINED") != "true":
-        push("✅ Ergebnistracker: Testnachricht", "Manueller Start – die Verbindung zur App funktioniert.",
-             "white_check_mark", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "low", args.dry_run)
+        push("Tracker · Test ✅", "Manueller Start – Verbindung steht.",
+             "", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "low", args.dry_run)
 
     refresh_schedule(cfg, state)
     send_digest(cfg, state, args.dry_run)
