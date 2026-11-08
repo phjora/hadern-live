@@ -1,0 +1,14 @@
+{
+ "club_id": "00ES8GNHBS00000SVV0AG08LVUPGND5I",
+ "club_slug": "tsv-grosshadern",
+ "club_name": "TSV Großhadern",
+ "calendar_name": "TSV Großhadern – Spiele & Ergebnisse",
+ "labels": {
+  "TSV Großhadern": "1. Mannschaft",
+  "TSV Großhadern 2": "2. Mannschaft",
+  "(SG) Großhadern/Sentilo-B./BSC Sendling U19": "U19 (SG)"
+ },
+ "notify": {
+  "kickoff": true
+ }
+}
