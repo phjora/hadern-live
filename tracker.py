@@ -369,7 +369,7 @@ def verdict_emoji(score: str | None) -> str:
         mine, theirs = (int(x) for x in (score or "").split(":"))
     except ValueError:
         return ""
-    return "✅" if mine > theirs else "❌" if mine < theirs else "🤝"
+    return "🟢" if mine > theirs else "🔴" if mine < theirs else "🟡"
 
 
 def send_kickoff(game: dict, cfg: dict, dry_run: bool):
@@ -424,24 +424,45 @@ def process_match(game: dict, info: dict, cfg: dict, dry_run: bool) -> bool:
     if info["live"]:
         st["was_live"] = True
 
+    # Tore: während des Spiels über den Spielstand (die Torliste füllt der BFV oft erst nach Abpfiff)
+    mine_now = ours_first(info["result"], side)
+    pushed = st.setdefault("scores", [])
     known = set(st["goals"])
     for g in info["goals"]:
         gid = g.get("goalId")
         if gid in known:
             continue
         st["goals"].append(gid)
+        score = ours_first(g.get("score"), side)
+        if score in pushed or st.get("whistle_sent") or not info["live"]:
+            continue  # schon gemeldet, Spiel vorbei oder nachgetragen (dann zählt nur das Endergebnis)
+        pushed.append(score)
         ours = (g.get("home") and side == "home") or (not g.get("home") and side == "guest")
         minute = g.get("minute") or "?"
         if g.get("addMinute"):
             minute += f"+{g['addMinute']}"
         scorer = re.sub(r"\s*\(11m\)", "", g.get("name") or "")
         kind = {"penalty": " (11m)", "owngoal": " (ET)"}.get(g.get("type"), "")
-        score = ours_first(g.get("score"), side)
         if ours:
             title, prio, who = f"{label} · {score} ⚽", "high", f"{scorer}{kind}" if scorer and scorer != "k.A." else "Tor"
         else:
             title, prio, who = f"{label} · {score}", "default", "Gegentor"
         push(title, f"{minute}' {who}", "", url, prio, dry_run)
+    if info["live"] and mine_now and mine_now not in pushed and mine_now != "0:0":
+        prev = st.get("live_score") or "0:0"
+        pushed.append(mine_now)
+        try:
+            (pm, pt), (nm, nt) = ((int(x) for x in sc.split(":")) for sc in (prev, mine_now))
+            ours = nm > pm
+        except ValueError:
+            ours = True
+        minute = f"{info['live_minute']}' " if info.get("live_minute") else ""
+        if ours:
+            push(f"{label} · {mine_now} ⚽", f"{minute}Tor", "", url, "high", dry_run)
+        else:
+            push(f"{label} · {mine_now}", f"{minute}Gegentor", "", url, "default", dry_run)
+    if info["live"] and mine_now:
+        st["live_score"] = mine_now
 
     game["result"] = info["result"]
     game["halftime"] = info["halftime"]
@@ -450,22 +471,29 @@ def process_match(game: dict, info: dict, cfg: dict, dry_run: bool) -> bool:
     mine = ours_first(info["result"], side)
 
     # Abpfiff: Ticker war live und ist es nicht mehr
+    confirmed = info.get("status") in FINAL_STATUSES
     if st.get("was_live") and not info["live"] and not st.get("whistle_sent"):
         st["whistle_sent"] = True
         st["whistle_result"] = info["result"]
+        if confirmed and info["result"]:
+            st["final_sent"] = True  # schon bestätigt: eine einzige Ergebnis-Nachricht
         push(f"{label} · {mine or '?'} {verdict_emoji(mine)}".rstrip(),
-             f"{pairing}{ht} · vorläufig", "", url, "default", dry_run)
+             f"{pairing}{ht}{'' if confirmed else ' · vorläufig'}", "", url, "default", dry_run)
+        if st.get("final_sent"):
+            return True
 
     # Ergebnis offiziell eingetragen
     over = not info["live"] and now_utc() > kickoff + timedelta(minutes=60)
-    official = info["result"] and over and (not st.get("was_live") or info.get("status") in FINAL_STATUSES)
+    official = info["result"] and over and (not st.get("was_live") or confirmed)
     if official and not st.get("final_sent"):
         st["final_sent"] = True
-        note = " · offiziell"
-        if st.get("whistle_result") and st["whistle_result"] != info["result"]:
+        if st.get("whistle_sent") and st.get("whistle_result") == info["result"]:
+            return True  # Ticker-Stand bestätigt: keine zweite Nachricht
+        note = ""
+        if st.get("whistle_result"):
             note = f" · korrigiert (Ticker {ours_first(st['whistle_result'], side)})"
         push(f"{label} · {mine} {verdict_emoji(mine)}".rstrip(),
-             f"{pairing}{ht}{note if st.get('was_live') else ''}", "", url, "default", dry_run)
+             f"{pairing}{ht}{note}", "", url, "default", dry_run)
         return True
     return False
 
