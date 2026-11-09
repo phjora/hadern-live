@@ -594,6 +594,34 @@ def refresh_schedule(cfg: dict, state: dict):
         del games[gid]
 
 
+QUIET_FROM, QUIET_UNTIL = 22, 7  # nachts nicht nach nachgetragenen Ergebnissen fragen
+
+
+def poll_interval(st: dict, now: datetime, kickoff: datetime) -> timedelta:
+    if st.get("was_live") or st.get("ticker"):
+        if now <= kickoff + LIVE_WINDOW or st.get("was_live") and not st.get("whistle_sent"):
+            return timedelta(seconds=LIVE_POLL_SECONDS)
+    if now <= kickoff + LIVE_WINDOW:
+        return timedelta(minutes=5)
+    if now <= kickoff + timedelta(hours=6):
+        return timedelta(minutes=20)
+    return timedelta(minutes=60)  # später nachgetragene Ergebnisse: stündlich reicht
+
+
+def quiet(t: datetime, st: dict, now: datetime, kickoff: datetime) -> datetime:
+    """Nach der Live-Phase nachts nicht pollen: auf 07:00 verschieben."""
+    if now <= kickoff + LIVE_WINDOW:
+        return t
+    lt = t.astimezone(TZ)
+    if lt.hour >= QUIET_FROM:
+        lt = (lt + timedelta(days=1)).replace(hour=QUIET_UNTIL, minute=0, second=0, microsecond=0)
+    elif lt.hour < QUIET_UNTIL:
+        lt = lt.replace(hour=QUIET_UNTIL, minute=0, second=0, microsecond=0)
+    else:
+        return t
+    return lt.astimezone(timezone.utc)
+
+
 def one_pass(cfg: dict, state: dict, dry_run: bool) -> datetime | None:
     """Prüft alle fälligen Spiele. Gibt zurück, wann als Nächstes etwas zu prüfen ist (oder None)."""
     now = now_utc()
@@ -624,10 +652,12 @@ def one_pass(cfg: dict, state: dict, dry_run: bool) -> datetime | None:
             continue
         in_live = now <= kickoff + LIVE_WINDOW
         last = datetime.fromisoformat(g["checked"]) if g.get("checked") else None
-        interval = timedelta(seconds=LIVE_POLL_SECONDS) if (st.get("was_live") or st.get("ticker")) \
-            else timedelta(minutes=5) if in_live else timedelta(minutes=20)
+        interval = poll_interval(st, now, kickoff)
         if last and now - last < interval and not (now >= kickoff and not st.get("kickoff_sent")):
-            due(last + interval)
+            due(quiet(last + interval, st, now, kickoff))
+            continue
+        if quiet(now, st, now, kickoff) > now:
+            due(quiet(now, st, now, kickoff))  # nachts kein Nachfragen nach Ergebnissen
             continue
         try:
             info = fetch_match(g["id"])
@@ -642,9 +672,7 @@ def one_pass(cfg: dict, state: dict, dry_run: bool) -> datetime | None:
             st["ticker"] = True
         process_match(g, info, cfg, dry_run)
         if not st.get("final_sent"):
-            interval = timedelta(seconds=LIVE_POLL_SECONDS) if (st.get("was_live") or st.get("ticker")) \
-                else timedelta(minutes=5) if in_live else timedelta(minutes=20)
-            nxt = now + interval
+            nxt = quiet(now + poll_interval(st, now, kickoff), st, now, kickoff)
             if now < kickoff:
                 nxt = min(nxt, kickoff)  # Anstoß pünktlich melden
             due(nxt)
