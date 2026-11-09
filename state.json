@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-08",
+ "digest_date": "2026-11-09",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -1235,26 +1235,29 @@
    "team_label": "2. Mannschaft"
   },
   "032HF4FQLG000000VS5489BUVSGKI48U": {
-   "checked": "2026-11-08T22:57:24.063636+00:00",
+   "checked": "2026-11-09T15:38:53.461710+00:00",
    "competition": "FS/EJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern U10",
    "guest_plan": "TSV Großhadern U10",
-   "halftime": null,
+   "halftime": "5:2",
    "home": "FC Unterföhring U9",
    "home_plan": "FC Unterföhring U9",
    "id": "032HF4FQLG000000VS5489BUVSGKI48U",
    "kickoff": "2026-11-08T11:30:00+00:00",
    "location": "Sportplatz Unterer Aschheimer Weg | Unterer Aschheimer Weg 5 | 85774 Unterföhring",
    "pairing": "FC Unterföhring U9 – TSV Großhadern U10",
-   "result": null,
+   "result": "10:4",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
+    "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U10",
@@ -1329,75 +1332,63 @@
   {
    "id": "016PCCL5TO000000VV0AG811VTE5EA5R",
    "name": "TSV Großhadern",
-   "slug": "tsv-grosshadern",
-   "staffel": "0316NR0H1G000004VS5489BTVU7GTVLE-G"
+   "slug": "tsv-grosshadern"
   },
   {
    "id": "016PB0FKJ0000000VV0AG80NVV8OQVTB",
    "name": "TSV Großhadern 2",
-   "slug": "tsv-grosshadern-2",
-   "staffel": "031A5MGKBC000004VS5489BUVV628VP4-G"
+   "slug": "tsv-grosshadern-2"
   },
   {
    "id": "02BDU5KJVG000000VS5489B1VTPVH7C1",
    "name": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
-   "slug": "sg-grosshadern-sentilo-b-bsc-sendling-u19",
-   "staffel": "031HJ3KP8K00005IVS5489BUVSJ4CRAP-G"
+   "slug": "sg-grosshadern-sentilo-b-bsc-sendling-u19"
   },
   {
    "id": "02TPR2ED9K000000VS5489BRVSS9M1SM",
    "name": "TSV Großhadern U17",
-   "slug": "tsv-grosshadern-u17",
-   "staffel": "031HRMOACK000005VS5489BUVVKNMR0J-G"
+   "slug": "tsv-grosshadern-u17"
   },
   {
    "id": "0207TMGCRO000000VS548985VSL7HPD7",
    "name": "TSV Großhadern U15",
-   "slug": "tsv-grosshadern-u15",
-   "staffel": "031HS4V5HO000007VS5489BUVVKNMR0J-G"
+   "slug": "tsv-grosshadern-u15"
   },
   {
    "id": "02TPR1HM10000000VS5489BRVSS9M1SM",
    "name": "TSV Großhadern U14",
-   "slug": "tsv-grosshadern-u14",
-   "staffel": "031HS6LAOO000005VS5489BUVVKNMR0J-G"
+   "slug": "tsv-grosshadern-u14"
   },
   {
    "id": "011MIA9FVG000000VTVG0001VTR8C1K7",
    "name": "TSV Großhadern U12",
-   "slug": "tsv-grosshadern-u12",
-   "staffel": "031HSLR838000004VS5489BTVSRD0UH9-G"
+   "slug": "tsv-grosshadern-u12"
   },
   {
    "id": "031F0JCSIO000000VS5489BRVTPI24NQ",
    "name": "TSV Großhadern U12 2",
-   "slug": "tsv-grosshadern-u12-2",
-   "staffel": "031HTREPNS000004VS5489BTVSRD0UH9-G"
+   "slug": "tsv-grosshadern-u12-2"
   },
   {
    "id": "011MIBCK0K000000VTVG0001VTR8C1K7",
    "name": "TSV Großhadern U10",
-   "slug": "tsv-grosshadern-u10",
-   "staffel": "031I9A7LLS000008VS5489BUVVKNMR0J-G"
+   "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "012DK7BA90000000VTVG0001VU5LEIAC",
    "name": "TSV Großhadern U10 2",
-   "slug": "tsv-grosshadern-u10-2",
-   "staffel": "031I9A7MBO000008VS5489BUVVKNMR0J-G"
+   "slug": "tsv-grosshadern-u10-2"
   },
   {
    "id": "011MICV7L8000000VTVG0001VTR8C1K7",
    "name": "TSV Großhadern U9",
-   "slug": "tsv-grosshadern-u9",
-   "staffel": null
+   "slug": "tsv-grosshadern-u9"
   },
   {
    "id": "02TPQRFARO000000VS5489BRVSS9M1SM",
    "name": "TSV Großhadern U8",
-   "slug": "tsv-grosshadern-u8",
-   "staffel": null
+   "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-08"
+ "teams_date": "2026-11-09"
 }
