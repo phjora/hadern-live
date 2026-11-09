@@ -708,8 +708,14 @@ def main():
         if not args.watch or next_due is None:
             break
         if next_due >= deadline:
-            # Laufzeit reicht nicht: Staffelübergabe an einen neuen Lauf, wenn heute noch etwas ansteht
+            # Laufzeit reicht nicht: Staffelübergabe an einen neuen Lauf, wenn heute noch etwas ansteht.
+            # Erst die eigene Laufzeit absitzen – sonst startet sich der Tracker im Sekundentakt neu.
             if next_due <= chain_until:
+                rest = (deadline - now_utc()).total_seconds()
+                if rest > 0:
+                    log(f"Nächste Prüfung {local_time(next_due.isoformat())} – warte bis zur Übergabe "
+                        f"um {local_time(deadline.isoformat())}")
+                    time.sleep(rest)
                 CHAIN_FLAG.write_text(next_due.isoformat())
                 log(f"Übergabe an neuen Lauf (nächste Prüfung {local_time(next_due.isoformat())})")
             break
