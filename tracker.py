@@ -261,6 +261,7 @@ def parse_match_page(html: str, match_id: str, font_bytes: bytes | None = None) 
         "halftime": _score((res.get("resultHalfTime") or "").replace(" ", "").strip("()")),
         "goals": sorted(goals, key=lambda g: g.get("goalId", 0)),
         "competition": m.get("competitionName"),
+        "ticker_count": match.get("liveTickerCount") or 0,
     }
 
 
@@ -274,7 +275,68 @@ def _score(text: str | None) -> str | None:
 def fetch_match(match_id: str) -> dict:
     r = session.get(f"{BFV}/ergebnisse/spiel/-/{match_id}", timeout=30)
     r.raise_for_status()
-    return parse_match_page(r.text, match_id)
+    info = parse_match_page(r.text, match_id)
+    if info["live"] and info.get("ticker_count", 0) >= 2:
+        try:
+            apply_best_ticker(info, match_id)
+        except Exception as e:  # Zusatzquelle: darf nie den normalen Ablauf stören
+            log(f"Weitere Ticker nicht lesbar: {e}")
+    return info
+
+
+# ---------------------------------------------------------------------------
+# Mehrere Liveticker pro Spiel
+# Die Spielseite zeigt nur den Stand des ersten Tickers. Bricht der ab (z. B. nach dem 1:0),
+# während ein Fanticker weiterläuft, bleibt die Spielseite stehen. Deshalb: alle Ticker lesen
+# und den am weitesten fortgeschrittenen nehmen.
+# ---------------------------------------------------------------------------
+
+def _goal_sum(score: str | None) -> int:
+    try:
+        a, b = (score or "").split(":")
+        return int(a) + int(b)
+    except ValueError:
+        return -1
+
+
+def parse_ticker(html: str) -> dict:
+    payload = rsc_payload(html)
+    i = payload.find('"ticker":{')
+    if i < 0:
+        raise ValueError("kein Ticker auf der Seite")
+    return json.loads(_balanced(payload, i + len('"ticker":')))
+
+
+def best_ticker(match_id: str) -> dict:
+    base = f"{BFV}/ergebnisse/spiel/-/{match_id}/liveticker"
+    r = session.get(base, timeout=30)
+    r.raise_for_status()
+    first = parse_ticker(r.text)
+    cands = [first]
+    for t in (first.get("tickers") or [])[:4]:
+        if t.get("id") and t["id"] != first.get("id"):
+            time.sleep(0.3)
+            r = session.get(f"{base}/{t['id']}", timeout=30)
+            r.raise_for_status()
+            cands.append(parse_ticker(r.text))
+    return max(cands, key=lambda t: (_goal_sum(_score(t.get("score"))), t.get("timeplayed") or 0,
+                                     len(t.get("events") or [])))
+
+
+def apply_best_ticker(info: dict, match_id: str):
+    t = best_ticker(match_id)
+    score = _score(t.get("score"))
+    if not score or _goal_sum(score) < _goal_sum(info["result"] or "0:0"):
+        return
+    if _goal_sum(score) > _goal_sum(info["result"] or "0:0"):
+        info["result"] = score
+        goal = next((e for e in t.get("events") or [] if e.get("typeId") == 1 and _score(e.get("score")) == score), None)
+        info["live_minute"] = str(goal["minute"]) if goal and goal.get("minute") else None
+    if t.get("actualKickoffSecondHalf"):
+        info["halftime"] = _score(t.get("scoreHalftime")) or info["halftime"]
+        full = (t.get("duration") or 90) * 60
+        if not t.get("live") and (t.get("timeplayed") or 0) >= full:
+            info["live"] = False  # dieser Ticker ist abgepfiffen, auch wenn die Spielseite noch „live“ zeigt
 
 
 # ---------------------------------------------------------------------------
