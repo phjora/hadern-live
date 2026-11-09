@@ -27,6 +27,8 @@ jobs:
     timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # neuesten Stand holen, auch wenn der Lauf in der Warteschlange stand
 
       - uses: actions/setup-python@v5
         with:
@@ -46,9 +48,18 @@ jobs:
         run: |
           git config user.name "ergebnistracker-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state.json docs/ergebnisse.ics
-          git diff --cached --quiet || git commit -m "Update $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push || (git pull --rebase && git push)
+          mkdir -p /tmp/keep && cp state.json /tmp/keep/ && cp docs/ergebnisse.ics /tmp/keep/
+          # Unser Zustand ist der neueste: auf aktuellen Stand setzen, Dateien drüberlegen, pushen
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp /tmp/keep/state.json state.json && cp /tmp/keep/ergebnisse.ics docs/ergebnisse.ics
+            git add state.json docs/ergebnisse.ics
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Update $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
 
       - name: Bei Bedarf neuen Lauf starten (Übergabe vor dem 6-h-Limit)
         if: always()
