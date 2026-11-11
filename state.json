@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-10",
+ "digest_date": "2026-11-11",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -601,8 +601,8 @@
    "guest_plan": "TSV Großhadern U10 2",
    "home_plan": "SV Olympiadorf München U10 2",
    "id": "031KJUIVP4000000VS5489BUVVKNMR0J",
-   "kickoff": "2026-11-21T09:30:00+00:00",
-   "location": "Sportanlage Moosacher Straße, Platz 1 | Moosacher Str. 99 | 80809 München",
+   "kickoff": "2026-11-15T15:30:00+00:00",
+   "location": "Sportanlage Moosacher Straße, Platz 2 | Moosacher Str. 99 | 80809 München",
    "pairing": "SV Olympiadorf München U10 2 – TSV Großhadern U10 2",
    "st": {
     "goals": []
@@ -1390,5 +1390,5 @@
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-10"
+ "teams_date": "2026-11-11"
 }
