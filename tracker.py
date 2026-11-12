@@ -48,7 +48,7 @@ LIVE_WINDOW = timedelta(minutes=150)     # so lange wird minütlich gepollt
 RESULT_WINDOW = timedelta(hours=48)      # so lange warten wir auf ein nachgetragenes Ergebnis
 LIVE_POLL_SECONDS = 60
 MAX_RUNTIME = timedelta(hours=5, minutes=40)  # GitHub-Limit sind 6 h
-CHAIN_UNTIL_HOUR = 22  # bis dahin startet sich der Tracker bei Bedarf selbst neu
+CHAIN_UNTIL_HOUR = 23  # bis dahin startet sich der Tracker bei Bedarf selbst neu
 CHAIN_FLAG = ROOT / ".chain"
 
 session = requests.Session()
@@ -673,7 +673,7 @@ def refresh_schedule(cfg: dict, state: dict):
         del games[gid]
 
 
-QUIET_FROM, QUIET_UNTIL = 22, 7  # nachts nicht nach nachgetragenen Ergebnissen fragen
+QUIET_FROM, QUIET_UNTIL = 23, 7  # nachts nicht nach nachgetragenen Ergebnissen fragen
 
 
 def poll_interval(st: dict, now: datetime, kickoff: datetime) -> timedelta:
