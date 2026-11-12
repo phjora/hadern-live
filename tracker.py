@@ -39,7 +39,7 @@ SERVICE = "https://service.bfv.de/rest"
 FONT_URL = "https://app.bfv.de/export.fontface/-/format/ttf/id/{fid}/type/font"
 UA = "HadernerErgebnistracker/0.2 (Vereinsprojekt; Prototyp)"
 TZ = ZoneInfo("Europe/Berlin")
-DIGEST_HOUR = 7  # ab dieser Uhrzeit (lokal) kommt die Spieltag-Übersicht
+DIGEST_HOUR = 8  # ab dieser Uhrzeit (lokal) kommt die Spieltag-Übersicht
 
 # Zeitfenster rund um ein Spiel
 PRE_KICKOFF = timedelta(minutes=10)      # ab hier wird ein Spiel beobachtet
@@ -745,6 +745,18 @@ def one_pass(cfg: dict, state: dict, dry_run: bool) -> datetime | None:
     return next_due
 
 
+def digest_due(state: dict) -> datetime | None:
+    """Zeitpunkt der heutigen Spieltag-Übersicht, falls sie noch aussteht und heute gespielt wird."""
+    now_local = datetime.now(TZ)
+    today = now_local.date().isoformat()
+    if state.get("digest_date") == today or now_local.hour >= DIGEST_HOUR:
+        return None
+    if not any(datetime.fromisoformat(g["kickoff"]).astimezone(TZ).date().isoformat() == today
+               for g in state.get("games", {}).values()):
+        return None
+    return now_local.replace(hour=DIGEST_HOUR, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--watch", action="store_true", help="aktiv bleiben, solange Spiele laufen")
@@ -755,16 +767,16 @@ def main():
     state = load_json(STATE_PATH, {})
     started = now_utc()
 
-    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" and os.environ.get("CHAINED") != "true":
-        push("Tracker · Test ✅", "Manueller Start – Verbindung steht.",
-             "", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "low", args.dry_run)
-
     refresh_schedule(cfg, state)
     send_digest(cfg, state, args.dry_run)
     deadline = started + MAX_RUNTIME
     chain_until = datetime.now(TZ).replace(hour=CHAIN_UNTIL_HOUR, minute=0, second=0, microsecond=0)
     while True:
         next_due = one_pass(cfg, state, args.dry_run)
+        send_digest(cfg, state, args.dry_run)  # falls der Lauf schon vor der Übersichts-Uhrzeit begonnen hat
+        d = digest_due(state)
+        if d and (next_due is None or d < next_due):
+            next_due = d
         save_json(STATE_PATH, state)
         write_ics(state.get("games", {}), cfg)
         if not args.watch or next_due is None:
