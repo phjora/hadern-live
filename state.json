@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-11",
+ "digest_date": "2026-11-12",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -713,17 +713,28 @@
    "team_label": "U17"
   },
   "031KK5UG64000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-12T17:20:00.000764+00:00",
    "competition": "U15 (JgL) Kreisklasse Süd",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Gräfelfing U15",
    "guest_plan": "TSV Gräfelfing U15",
+   "halftime": null,
+   "home": "TSV Großhadern U15",
    "home_plan": "TSV Großhadern U15",
    "id": "031KK5UG64000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-12T17:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U15 – TSV Gräfelfing U15",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
@@ -1390,5 +1401,5 @@
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-11"
+ "teams_date": "2026-11-12"
 }
