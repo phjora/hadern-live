@@ -3,8 +3,8 @@ name: Ergebnistracker
 on:
   schedule:
     # Zeiten in UTC (Winter: +1 h, Sommer: +2 h)
-    - cron: "5 6 * * *"           # täglich ~07:05 Uhr: Spieltag-Übersicht
-    - cron: "40 6 * * *"          # Reserve, falls GitHub den 07:05-Start auslässt (Übersicht kommt nur einmal)
+    - cron: "2 7 * * *"           # täglich ~08:00 Uhr: Spieltag-Übersicht
+    - cron: "32 7 * * *"          # Reserve, falls GitHub den ersten Start auslässt (Übersicht kommt nur einmal)
     - cron: "13,33,53 7-19 * * 0,6"   # Sa/So 08–20 Uhr alle 20 Minuten (krumme Minuten: GitHub lässt volle Stunden öfter aus)
     - cron: "17,47 14-19 * * 1-5"     # Mo–Fr 15–20 Uhr alle 30 Minuten (Reserve für Spiele unter der Woche)
   workflow_dispatch:                # manuell starten über "Run workflow"
