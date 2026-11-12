@@ -39,7 +39,8 @@ SERVICE = "https://service.bfv.de/rest"
 FONT_URL = "https://app.bfv.de/export.fontface/-/format/ttf/id/{fid}/type/font"
 UA = "HadernerErgebnistracker/0.2 (Vereinsprojekt; Prototyp)"
 TZ = ZoneInfo("Europe/Berlin")
-DIGEST_HOUR = 8  # ab dieser Uhrzeit (lokal) kommt die Spieltag-Übersicht
+DIGEST_HOUR = 11        # Spieltag-Übersicht um 11 Uhr (lokal) ...
+DIGEST_LEAD = timedelta(minutes=30)  # ... oder 30 Minuten vor dem ersten Anpfiff, falls der früher ist
 
 # Zeitfenster rund um ein Spiel
 PRE_KICKOFF = timedelta(minutes=10)      # ab hier wird ein Spiel beobachtet
@@ -564,23 +565,39 @@ def process_match(game: dict, info: dict, cfg: dict, dry_run: bool) -> bool:
 # Spieltags-Übersicht
 # ---------------------------------------------------------------------------
 
+def todays_games(state: dict) -> list[dict]:
+    today = datetime.now(TZ).date().isoformat()
+    return [g for g in state.get("games", {}).values()
+            if datetime.fromisoformat(g["kickoff"]).astimezone(TZ).date().isoformat() == today]
+
+
+def digest_time(todays: list[dict]) -> datetime:
+    """11 Uhr – oder 30 Minuten vor dem ersten Anpfiff des Tages, wenn das früher ist."""
+    t = datetime.now(TZ).replace(hour=DIGEST_HOUR, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+    first = min(datetime.fromisoformat(g["kickoff"]) for g in todays)
+    return min(t, first - DIGEST_LEAD)
+
+
 def send_digest(cfg: dict, state: dict, dry_run: bool):
-    now_local = datetime.now(TZ)
-    today = now_local.date().isoformat()
-    if state.get("digest_date") == today or now_local.hour < DIGEST_HOUR:
+    today = datetime.now(TZ).date().isoformat()
+    if state.get("digest_date") == today:
         return
-    todays = [g for g in state.get("games", {}).values()
-              if datetime.fromisoformat(g["kickoff"]).astimezone(TZ).date().isoformat() == today]
-    state["digest_date"] = today
+    todays = todays_games(state)
     if not todays:
+        state["digest_date"] = today
         return
+    if now_utc() < digest_time(todays):
+        return
+    state["digest_date"] = today
+    if now_utc() > max(datetime.fromisoformat(g["kickoff"]) for g in todays):
+        return  # alle Spiele schon angepfiffen: Übersicht käme zu spät
     lines = []
     for g in sorted(todays, key=lambda x: x["kickoff"]):
         opp = opponent(g, cfg).replace("gg. ", "")
         extra = " 🎪" if g.get("festival") else ""
         lines.append(f"{local_time(g['kickoff'])} {g['team_label']} – {opp}{extra}")
     n = len(todays)
-    push(f"📅 {n} {'Spiel' if n == 1 else 'Spiele'} heute", "\n".join(lines),
+    push(f"📅 SPIELTAG! {n} {'Spiel' if n == 1 else 'Spiele'} heute!", "\n".join(lines),
          "", f"{BFV}/vereine/{cfg['club_slug']}/{cfg['club_id']}", "default", dry_run)
 
 
@@ -747,14 +764,13 @@ def one_pass(cfg: dict, state: dict, dry_run: bool) -> datetime | None:
 
 def digest_due(state: dict) -> datetime | None:
     """Zeitpunkt der heutigen Spieltag-Übersicht, falls sie noch aussteht und heute gespielt wird."""
-    now_local = datetime.now(TZ)
-    today = now_local.date().isoformat()
-    if state.get("digest_date") == today or now_local.hour >= DIGEST_HOUR:
+    if state.get("digest_date") == datetime.now(TZ).date().isoformat():
         return None
-    if not any(datetime.fromisoformat(g["kickoff"]).astimezone(TZ).date().isoformat() == today
-               for g in state.get("games", {}).values()):
+    todays = todays_games(state)
+    if not todays:
         return None
-    return now_local.replace(hour=DIGEST_HOUR, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+    t = digest_time(todays)
+    return t if now_utc() < t else None
 
 
 def main():
