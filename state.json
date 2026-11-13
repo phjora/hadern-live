@@ -215,8 +215,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern 2",
-   "team_label": "Zweite"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031FNQH8O0000000VS5489BUVSJ4CRAP": {
    "competition": "113 Kreisklasse 3",
@@ -231,8 +231,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern 2",
-   "team_label": "Zweite"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031FNQH8U8000000VS5489BUVSJ4CRAP": {
    "checked": "2026-11-08T08:51:59.331134+00:00",
@@ -421,8 +421,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern 2",
-   "team_label": "Zweite"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031K543LAS000000VS5489BUVVKNMR0J": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -473,8 +473,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U8",
-   "team_label": "U8"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031KIRESG4000000VS5489BUVVKNMR0J": {
    "competition": "U9 (F-J) Süd Jaguar 1",
@@ -489,8 +489,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U9",
-   "team_label": "U9"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031KJUFUBG000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T08:51:59.331134+00:00",
@@ -531,8 +531,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U10",
-   "team_label": "U10"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031KJUFUJS000000VS5489BUVVKNMR0J": {
    "competition": "U10 (E-J) Süd Kupfer",
@@ -547,8 +547,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U10",
-   "team_label": "U10"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031KJUIVGO000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T11:15:42.537565+00:00",
@@ -591,8 +591,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U10 2",
-   "team_label": "U10 2"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031KJUIVP4000000VS5489BUVVKNMR0J": {
    "competition": "U10 (E-J) Süd Magenta",
@@ -607,8 +607,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U10 2",
-   "team_label": "U10 2"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031KK1KRLK000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T08:51:59.331134+00:00",
@@ -1139,8 +1139,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U12 2",
-   "team_label": "U12 2"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031RH9IMIO000000VS5489BUVVE0O1R6": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -1299,7 +1299,7 @@
   },
   "032J6CNP4C000000VS5489BUVSGKI48U": {
    "competition": "FS/EJ/K-FS/Z/1",
-   "festival": true,
+   "festival": false,
    "festival_hint": false,
    "guest_plan": "TSV Großhadern U9",
    "home_plan": "TSV Gilching/Argelsried 5",
@@ -1310,8 +1310,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U9",
-   "team_label": "U9"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "032KCFK02O000000VS5489BTVSIO88SN": {
    "competition": "FS/EJ/K-FS/M/1",
@@ -1326,8 +1326,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U10",
-   "team_label": "U10"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "032KFEI5BK000000VS5489BTVSIO88SN": {
    "competition": "FS/DJ/K-FS/M/1",
@@ -1342,8 +1342,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U12 2",
-   "team_label": "U12 2"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   }
  },
  "teams": [
