@@ -1282,17 +1282,40 @@
    "team_label": "U10"
   },
   "032HP928V4000000VS5489BTVU989P58": {
+   "checked": "2026-11-13T21:45:00.005510+00:00",
    "competition": "FS/BJ/K-FS/Z/1",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U17",
    "guest_plan": "TSV Großhadern U17",
+   "halftime": "3:2",
+   "home": "FC Deisenhofen 3",
    "home_plan": "FC Deisenhofen 3",
    "id": "032HP928V4000000VS5489BTVU989P58",
    "kickoff": "2026-11-13T19:00:00+00:00",
    "location": "Sportanlage Deisenhofen, Kunstrasen | Am Sportplatz 22 | 82041 Deisenhofen",
    "pairing": "FC Deisenhofen 3 – TSV Großhadern U17",
+   "result": "6:3",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
    "team": "TSV Großhadern U17",
    "team_label": "U17"
@@ -1339,6 +1362,22 @@
    "kickoff": "2026-11-21T12:30:00+00:00",
    "location": "Sportcampus Neufreimann, Kunstrasen | Henny-Seidemann-Straße 19 | 80939 München",
    "pairing": "SV WB Allianz München U12 2 – TSV Großhadern U12 2",
+   "st": {
+    "goals": []
+   },
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
+  },
+  "032MLP0CRO000000VS5489BTVSIO88SN": {
+   "competition": "FS/FJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "SV München West U9",
+   "home_plan": "TSV Großhadern U9",
+   "id": "032MLP0CRO000000VS5489BTVSIO88SN",
+   "kickoff": "2026-11-21T08:00:00+00:00",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U9 – SV München West U9",
    "st": {
     "goals": []
    },
