@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-12",
+ "digest_date": "2026-11-13",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -713,27 +713,34 @@
    "team_label": "U17"
   },
   "031KK5UG64000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-12T20:45:00.005789+00:00",
+   "checked": "2026-11-13T07:06:08.625473+00:00",
    "competition": "U15 (JgL) Kreisklasse Süd",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Gräfelfing U15",
    "guest_plan": "TSV Gräfelfing U15",
-   "halftime": null,
+   "halftime": "1:0",
    "home": "TSV Großhadern U15",
    "home_plan": "TSV Großhadern U15",
    "id": "031KK5UG64000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-12T17:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U15 – TSV Gräfelfing U15",
-   "result": null,
+   "result": "3:1",
    "st": {
-    "goals": [],
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4
+    ],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U15",
@@ -1347,7 +1354,7 @@
   },
   {
    "id": "016PB0FKJ0000000VV0AG80NVV8OQVTB",
-   "name": "TSV Großhadern 2",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-2"
   },
   {
@@ -1377,29 +1384,34 @@
   },
   {
    "id": "031F0JCSIO000000VS5489BRVTPI24NQ",
-   "name": "TSV Großhadern U12 2",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u12-2"
   },
   {
    "id": "011MIBCK0K000000VTVG0001VTR8C1K7",
-   "name": "TSV Großhadern U10",
+   "name": "Bayerischer Fussball-Verband",
+   "slug": "tsv-grosshadern-u10"
+  },
+  {
+   "id": "03293LAR9K000000VS5489BRVV1OCL2F",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "012DK7BA90000000VTVG0001VU5LEIAC",
-   "name": "TSV Großhadern U10 2",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u10-2"
   },
   {
    "id": "011MICV7L8000000VTVG0001VTR8C1K7",
-   "name": "TSV Großhadern U9",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u9"
   },
   {
    "id": "02TPQRFARO000000VS5489BRVSS9M1SM",
-   "name": "TSV Großhadern U8",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-12"
+ "teams_date": "2026-11-13"
 }
