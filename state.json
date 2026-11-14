@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-13",
+ "digest_date": "2026-11-14",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -215,8 +215,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern 2",
+   "team_label": "Zweite"
   },
   "031FNQH8O0000000VS5489BUVSJ4CRAP": {
    "competition": "113 Kreisklasse 3",
@@ -231,8 +231,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern 2",
+   "team_label": "Zweite"
   },
   "031FNQH8U8000000VS5489BUVSJ4CRAP": {
    "checked": "2026-11-08T08:51:59.331134+00:00",
@@ -421,8 +421,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern 2",
+   "team_label": "Zweite"
   },
   "031K543LAS000000VS5489BUVVKNMR0J": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -471,10 +471,12 @@
    "location": "Sportanlage Moosacher Straße, Platz 1 | Moosacher Str. 99 | 80809 München",
    "pairing": "SV Olympiadorf München U8 2 – TSV Großhadern U8",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U8",
+   "team_label": "U8"
   },
   "031KIRESG4000000VS5489BUVVKNMR0J": {
    "competition": "U9 (F-J) Süd Jaguar 1",
@@ -487,10 +489,12 @@
    "location": "Sportanlage Sieboldstraße | Sieboldstr. 4 | 81669 München",
    "pairing": "TSV München-Ost U9 2 – TSV Großhadern U9",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U9",
+   "team_label": "U9"
   },
   "031KJUFUBG000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T08:51:59.331134+00:00",
@@ -519,20 +523,33 @@
    "team_label": "U10"
   },
   "031KJUFUJ0000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-14T10:50:20.176995+00:00",
    "competition": "U10 (E-J) Süd Kupfer",
    "festival": false,
    "festival_hint": false,
+   "guest": "MTV München U10",
    "guest_plan": "MTV München U10",
+   "halftime": "9:2",
+   "home": "TSV Großhadern U10",
    "home_plan": "TSV Großhadern U10",
    "id": "031KJUFUJ0000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T09:30:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U10 – MTV München U10",
+   "result": "16:2",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
   },
   "031KJUFUJS000000VS5489BUVVKNMR0J": {
    "competition": "U10 (E-J) Süd Kupfer",
@@ -547,8 +564,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
   },
   "031KJUIVGO000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T11:15:42.537565+00:00",
@@ -579,20 +596,31 @@
    "team_label": "U10 2"
   },
   "031KJUIVNO000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-14T12:25:42.998035+00:00",
    "competition": "U10 (E-J) Süd Magenta",
    "festival": false,
    "festival_hint": false,
+   "guest": "FC Espanol München U10",
    "guest_plan": "FC Espanol München U10",
+   "halftime": null,
+   "home": "TSV Großhadern U10 2",
    "home_plan": "TSV Großhadern U10 2",
    "id": "031KJUIVNO000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T08:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U10 2 – FC Espanol München U10",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10 2",
+   "team_label": "U10 2"
   },
   "031KJUIVP4000000VS5489BUVVKNMR0J": {
    "competition": "U10 (E-J) Süd Magenta",
@@ -607,8 +635,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10 2",
+   "team_label": "U10 2"
   },
   "031KK1KRLK000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T08:51:59.331134+00:00",
@@ -921,17 +949,28 @@
    "team_label": "U14"
   },
   "031KK87VS8000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-14T12:40:00.002662+00:00",
    "competition": "U14 (JgL) Gruppe Süd",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U14",
    "guest_plan": "TSV Großhadern U14",
+   "halftime": null,
+   "home": "TSV Turnerbund München U14 2",
    "home_plan": "TSV Turnerbund München U14 2",
    "id": "031KK87VS8000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T11:15:00+00:00",
    "location": "BSA Agilolfingerstraße, Kunstrasen | Agilolfingerstr. 6 | 81543 München",
    "pairing": "TSV Turnerbund München U14 2 – TSV Großhadern U14",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
@@ -1061,17 +1100,28 @@
    "team_label": "U14"
   },
   "031KKBB29G000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-14T12:40:00.002662+00:00",
    "competition": "U12 (JgL) Kreisklasse Süd 1",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSG Pasing U12",
    "guest_plan": "TSG Pasing U12",
+   "halftime": null,
+   "home": "TSV Großhadern U12",
    "home_plan": "TSV Großhadern U12",
    "id": "031KKBB29G000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T11:30:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U12 – TSG Pasing U12",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U12",
    "team_label": "U12"
@@ -1139,8 +1189,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   },
   "031RH9IMIO000000VS5489BUVVE0O1R6": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -1322,7 +1372,7 @@
   },
   "032J6CNP4C000000VS5489BUVSGKI48U": {
    "competition": "FS/EJ/K-FS/Z/1",
-   "festival": false,
+   "festival": true,
    "festival_hint": false,
    "guest_plan": "TSV Großhadern U9",
    "home_plan": "TSV Gilching/Argelsried 5",
@@ -1333,8 +1383,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U9",
+   "team_label": "U9"
   },
   "032KCFK02O000000VS5489BTVSIO88SN": {
    "competition": "FS/EJ/K-FS/M/1",
@@ -1349,8 +1399,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
   },
   "032KFEI5BK000000VS5489BTVSIO88SN": {
    "competition": "FS/DJ/K-FS/M/1",
@@ -1365,12 +1415,12 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   },
   "032MLP0CRO000000VS5489BTVSIO88SN": {
    "competition": "FS/FJ/K-FS/M/1",
-   "festival": false,
+   "festival": true,
    "festival_hint": false,
    "guest_plan": "SV München West U9",
    "home_plan": "TSV Großhadern U9",
@@ -1381,8 +1431,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U9",
+   "team_label": "U9"
   }
  },
  "teams": [
@@ -1393,7 +1443,7 @@
   },
   {
    "id": "016PB0FKJ0000000VV0AG80NVV8OQVTB",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern 2",
    "slug": "tsv-grosshadern-2"
   },
   {
@@ -1405,6 +1455,11 @@
    "id": "02TPR2ED9K000000VS5489BRVSS9M1SM",
    "name": "TSV Großhadern U17",
    "slug": "tsv-grosshadern-u17"
+  },
+  {
+   "id": "03293L64N0000000VS5489BRVV1OCL2F",
+   "name": "TSV Großhadern",
+   "slug": "tsv-grosshadern"
   },
   {
    "id": "0207TMGCRO000000VS548985VSL7HPD7",
@@ -1423,34 +1478,34 @@
   },
   {
    "id": "031F0JCSIO000000VS5489BRVTPI24NQ",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U12 2",
    "slug": "tsv-grosshadern-u12-2"
   },
   {
    "id": "011MIBCK0K000000VTVG0001VTR8C1K7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10",
    "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "03293LAR9K000000VS5489BRVV1OCL2F",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10",
    "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "012DK7BA90000000VTVG0001VU5LEIAC",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10 2",
    "slug": "tsv-grosshadern-u10-2"
   },
   {
    "id": "011MICV7L8000000VTVG0001VTR8C1K7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U9",
    "slug": "tsv-grosshadern-u9"
   },
   {
    "id": "02TPQRFARO000000VS5489BRVSS9M1SM",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U8",
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-13"
+ "teams_date": "2026-11-14"
 }
