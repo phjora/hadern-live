@@ -596,27 +596,29 @@
    "team_label": "U10 2"
   },
   "031KJUIVNO000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-14T12:25:42.998035+00:00",
+   "checked": "2026-11-14T12:45:42.998134+00:00",
    "competition": "U10 (E-J) Süd Magenta",
    "festival": false,
    "festival_hint": false,
    "guest": "FC Espanol München U10",
    "guest_plan": "FC Espanol München U10",
-   "halftime": null,
+   "halftime": "2:1",
    "home": "TSV Großhadern U10 2",
    "home_plan": "TSV Großhadern U10 2",
    "id": "031KJUIVNO000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T08:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U10 2 – FC Espanol München U10",
-   "result": null,
+   "result": "3:1",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U10 2",
@@ -775,17 +777,37 @@
    "team_label": "U15"
   },
   "031KK5UGEC000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-14T15:25:00.005134+00:00",
    "competition": "U15 (JgL) Kreisklasse Süd",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSG Pasing U15",
    "guest_plan": "TSG Pasing U15",
+   "halftime": "0:4",
+   "home": "TSV Großhadern U15",
    "home_plan": "TSV Großhadern U15",
    "id": "031KK5UGEC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T13:45:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U15 – TSG Pasing U15",
+   "result": "1:5",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
    "team": "TSV Großhadern U15",
    "team_label": "U15"
@@ -949,27 +971,29 @@
    "team_label": "U14"
   },
   "031KK87VS8000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-14T12:40:00.002662+00:00",
+   "checked": "2026-11-14T13:10:00.004122+00:00",
    "competition": "U14 (JgL) Gruppe Süd",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern U14",
    "guest_plan": "TSV Großhadern U14",
-   "halftime": null,
+   "halftime": "6:0",
    "home": "TSV Turnerbund München U14 2",
    "home_plan": "TSV Turnerbund München U14 2",
    "id": "031KK87VS8000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T11:15:00+00:00",
    "location": "BSA Agilolfingerstraße, Kunstrasen | Agilolfingerstr. 6 | 81543 München",
    "pairing": "TSV Turnerbund München U14 2 – TSV Großhadern U14",
-   "result": null,
+   "result": "10:1",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U14",
@@ -1100,27 +1124,29 @@
    "team_label": "U14"
   },
   "031KKBB29G000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-14T12:40:00.002662+00:00",
+   "checked": "2026-11-14T12:45:00.002873+00:00",
    "competition": "U12 (JgL) Kreisklasse Süd 1",
    "festival": false,
    "festival_hint": false,
    "guest": "TSG Pasing U12",
    "guest_plan": "TSG Pasing U12",
-   "halftime": null,
+   "halftime": "3:0",
    "home": "TSV Großhadern U12",
    "home_plan": "TSV Großhadern U12",
    "id": "031KKBB29G000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-14T11:30:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U12 – TSG Pasing U12",
-   "result": null,
+   "result": "4:0",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "finished"
     ]
    },
    "team": "TSV Großhadern U12",
