@@ -39,32 +39,45 @@
    "team_label": "Erste"
   },
   "031BSK5UOS000000VS5489BTVUS470OH": {
-   "checked": "2026-11-15T12:40:21.079731+00:00",
+   "checked": "2026-11-15T14:44:36.204280+00:00",
    "competition": "Kreisliga München",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern",
    "guest_plan": "TSV Großhadern",
-   "halftime": null,
+   "halftime": "1:1",
    "home": "TSV Trudering M.",
    "home_plan": "TSV Trudering M.",
    "id": "031BSK5UOS000000VS5489BTVUS470OH",
    "kickoff": "2026-11-15T12:15:00+00:00",
    "location": "BSA Feldbergstraße, Kunstrasenplatz 2 | Feldbergstr. 65 | 81825 München",
    "pairing": "TSV Trudering M. – TSV Großhadern",
-   "result": "0:0",
+   "result": "2:1",
    "st": {
-    "goals": [],
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3
+    ],
     "kickoff_sent": true,
-    "live_score": "0:0",
-    "scores": [],
+    "live_score": "1:2",
+    "scores": [
+     "1:0",
+     "1:1",
+     "1:2"
+    ],
     "seen": true,
     "statuses": [
      "scheduled",
-     "live"
+     "live",
+     "finished",
+     "acknowledged"
     ],
     "ticker": true,
-    "was_live": true
+    "was_live": true,
+    "whistle_result": "2:1",
+    "whistle_sent": true
    },
    "team": "TSV Großhadern",
    "team_label": "Erste"
@@ -234,27 +247,37 @@
    "team_label": "Zweite"
   },
   "031FNQH8O0000000VS5489BUVSJ4CRAP": {
-   "checked": "2026-11-15T12:25:59.735466+00:00",
+   "checked": "2026-11-15T12:46:14.464310+00:00",
    "competition": "113 Kreisklasse 3",
    "festival": false,
    "festival_hint": false,
    "guest": "SV Planegg-Krailling 2",
    "guest_plan": "SV Planegg-Krailling 2",
-   "halftime": null,
+   "halftime": "1:4",
    "home": "TSV Großhadern 2",
    "home_plan": "TSV Großhadern 2",
    "id": "031FNQH8O0000000VS5489BUVSJ4CRAP",
    "kickoff": "2026-11-15T10:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern 2 – SV Planegg-Krailling 2",
-   "result": null,
+   "result": "2:5",
    "st": {
-    "goals": [],
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern 2",
@@ -651,17 +674,31 @@
    "team_label": "U10 2"
   },
   "031KJUIVP4000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-15T17:02:00.009337+00:00",
    "competition": "U10 (E-J) Süd Magenta",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U10 2",
    "guest_plan": "TSV Großhadern U10 2",
+   "halftime": "4:1",
+   "home": "SV Olympiadorf München U10 2",
    "home_plan": "SV Olympiadorf München U10 2",
    "id": "031KJUIVP4000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-15T15:30:00+00:00",
    "location": "Sportanlage Moosacher Straße, Platz 2 | Moosacher Str. 99 | 80809 München",
    "pairing": "SV Olympiadorf München U10 2 – TSV Großhadern U10 2",
+   "result": "6:1",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ],
+    "ticker": true
    },
    "team": "TSV Großhadern U10 2",
    "team_label": "U10 2"
@@ -1229,27 +1266,35 @@
    "team_label": "U12 2"
   },
   "031KKE893O000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-15T12:40:43.058710+00:00",
+   "checked": "2026-11-15T13:25:57.946663+00:00",
    "competition": "U12 (JgL) Gruppe Süd 3",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Forstenried U12 3",
    "guest_plan": "TSV Forstenried U12 3",
-   "halftime": null,
+   "halftime": "1:0",
    "home": "TSV Großhadern U12 2",
    "home_plan": "TSV Großhadern U12 2",
    "id": "031KKE893O000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-15T12:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U12 2 – TSV Forstenried U12 3",
-   "result": null,
+   "result": "4:1",
    "st": {
-    "goals": [],
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U12 2",
