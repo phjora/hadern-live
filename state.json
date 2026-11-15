@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-14",
+ "digest_date": "2026-11-15",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -39,17 +39,32 @@
    "team_label": "Erste"
   },
   "031BSK5UOS000000VS5489BTVUS470OH": {
+   "checked": "2026-11-15T12:40:21.079731+00:00",
    "competition": "Kreisliga München",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern",
    "guest_plan": "TSV Großhadern",
+   "halftime": null,
+   "home": "TSV Trudering M.",
    "home_plan": "TSV Trudering M.",
    "id": "031BSK5UOS000000VS5489BTVUS470OH",
    "kickoff": "2026-11-15T12:15:00+00:00",
    "location": "BSA Feldbergstraße, Kunstrasenplatz 2 | Feldbergstr. 65 | 81825 München",
    "pairing": "TSV Trudering M. – TSV Großhadern",
+   "result": "0:0",
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "live_score": "0:0",
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "live"
+    ],
+    "ticker": true,
+    "was_live": true
    },
    "team": "TSV Großhadern",
    "team_label": "Erste"
@@ -219,17 +234,28 @@
    "team_label": "Zweite"
   },
   "031FNQH8O0000000VS5489BUVSJ4CRAP": {
+   "checked": "2026-11-15T12:25:59.735466+00:00",
    "competition": "113 Kreisklasse 3",
    "festival": false,
    "festival_hint": false,
+   "guest": "SV Planegg-Krailling 2",
    "guest_plan": "SV Planegg-Krailling 2",
+   "halftime": null,
+   "home": "TSV Großhadern 2",
    "home_plan": "TSV Großhadern 2",
    "id": "031FNQH8O0000000VS5489BUVSJ4CRAP",
    "kickoff": "2026-11-15T10:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern 2 – SV Planegg-Krailling 2",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern 2",
    "team_label": "Zweite"
@@ -1203,17 +1229,28 @@
    "team_label": "U12 2"
   },
   "031KKE893O000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-15T12:40:43.058710+00:00",
    "competition": "U12 (JgL) Gruppe Süd 3",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Forstenried U12 3",
    "guest_plan": "TSV Forstenried U12 3",
+   "halftime": null,
+   "home": "TSV Großhadern U12 2",
    "home_plan": "TSV Großhadern U12 2",
    "id": "031KKE893O000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-15T12:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U12 2 – TSV Forstenried U12 3",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U12 2",
    "team_label": "U12 2"
@@ -1407,7 +1444,9 @@
    "location": "Sportanlage Gilching, Kunstrasen | Talhofstr. 13 | 82205 Gilching",
    "pairing": "TSV Gilching/Argelsried 5 – TSV Großhadern U9",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true
    },
    "team": "TSV Großhadern U9",
    "team_label": "U9"
@@ -1459,6 +1498,38 @@
    },
    "team": "TSV Großhadern U9",
    "team_label": "U9"
+  },
+  "032MODB0G8000000VS5489BTVSIO88SN": {
+   "competition": "FS/DJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Grasbrunn-Neukeferloh U12",
+   "home_plan": "TSV Großhadern U12 2",
+   "id": "032MODB0G8000000VS5489BTVSIO88SN",
+   "kickoff": "2026-12-06T10:00:00+00:00",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U12 2 – TSV Grasbrunn-Neukeferloh U12",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
+  },
+  "032N1QA1P0000000VS5489BTVSIO88SN": {
+   "competition": "FS/EJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern U10",
+   "home_plan": "SpVgg 1906 Haidhausen U10 2",
+   "id": "032N1QA1P0000000VS5489BTVSIO88SN",
+   "kickoff": "2026-11-28T09:00:00+00:00",
+   "location": "Sportanlage St.-Martin-Straße, Kleinfeld | St.-Martin-Str. 35 | 81541 München",
+   "pairing": "SpVgg 1906 Haidhausen U10 2 – TSV Großhadern U10",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
   }
  },
  "teams": [
@@ -1533,5 +1604,5 @@
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-14"
+ "teams_date": "2026-11-15"
 }
