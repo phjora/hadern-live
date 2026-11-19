@@ -1575,6 +1575,22 @@
    },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
+  },
+  "032OHG7KRK000000VS5489BTVSIO88SN": {
+   "competition": "FS/DJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Forstenried U12 2",
+   "home_plan": "TSV Großhadern U12 2",
+   "id": "032OHG7KRK000000VS5489BTVSIO88SN",
+   "kickoff": "2026-11-29T12:00:00+00:00",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "TSV Großhadern U12 2 – TSV Forstenried U12 2",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   }
  },
  "teams": [
