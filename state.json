@@ -753,8 +753,8 @@
    "st": {
     "goals": []
    },
-   "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
-   "team_label": "U19"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031KK28HLC000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T16:16:00.742010+00:00",
@@ -1530,7 +1530,7 @@
   },
   "032MLP0CRO000000VS5489BTVSIO88SN": {
    "competition": "FS/FJ/K-FS/M/1",
-   "festival": true,
+   "festival": false,
    "festival_hint": false,
    "guest_plan": "SV München West U9",
    "home_plan": "TSV Großhadern U9",
@@ -1541,8 +1541,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern U9",
-   "team_label": "U9"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "032MODB0G8000000VS5489BTVSIO88SN": {
    "competition": "FS/DJ/K-FS/M/1",
