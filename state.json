@@ -601,17 +601,30 @@
    "team_label": "U10"
   },
   "031KJUFUJS000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-21T14:55:00.002836+00:00",
    "competition": "U10 (E-J) Süd Kupfer",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U10",
    "guest_plan": "TSV Großhadern U10",
+   "halftime": "0:3",
+   "home": "FC Anadolu Bayern U10",
    "home_plan": "FC Anadolu Bayern U10",
    "id": "031KJUFUJS000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T13:30:00+00:00",
    "location": "BSA Hans-Dietrich-Genscher-Straße - Platz 2 | BSA Hans-Dietrich-Genscher-Straße 11 - 15 | 81249 München",
    "pairing": "FC Anadolu Bayern U10 – TSV Großhadern U10",
+   "result": "9:3",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
@@ -741,17 +754,28 @@
    "team_label": "U19"
   },
   "031KK1KRTC000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-21T18:20:00.002443+00:00",
    "competition": "U19 (A-Jun.) Kreisklasse Süd",
    "festival": false,
    "festival_hint": false,
+   "guest": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "guest_plan": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "halftime": null,
+   "home": "SC München-Süd U19",
    "home_plan": "SC München-Süd U19",
    "id": "031KK1KRTC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T17:00:00+00:00",
    "location": "BSA Thalkirchner Straße, Kunstrasen | Thalkirchner Str. 209 | 81371 München",
    "pairing": "SC München-Süd U19 – (SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "team_label": "U19"
@@ -790,27 +814,31 @@
    "team_label": "U17"
   },
   "031KK28HU4000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-21T12:40:00.001014+00:00",
+   "checked": "2026-11-21T14:35:23.080845+00:00",
    "competition": "U17 (B-Jun.) Kreisliga Süd 2",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern U17",
    "guest_plan": "TSV Großhadern U17",
-   "halftime": null,
+   "halftime": "0:0",
    "home": "SV Aubing U17",
    "home_plan": "SV Aubing U17",
    "id": "031KK28HU4000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:30:00+00:00",
    "location": "BSA Kronwinkler Straße, Kunstrasen | Kronwinkler Str. 25 | 81245 München",
    "pairing": "SV Aubing U17 – TSV Großhadern U17",
-   "result": null,
+   "result": "0:1",
    "st": {
-    "goals": [],
+    "final_sent": true,
+    "goals": [
+     1
+    ],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U17",
@@ -887,27 +915,29 @@
    "team_label": "U15"
   },
   "031KK5UGFC000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-21T12:40:00.001014+00:00",
+   "checked": "2026-11-21T14:15:23.080349+00:00",
    "competition": "U15 (JgL) Kreisklasse Süd",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern U15",
    "guest_plan": "TSV Großhadern U15",
-   "halftime": null,
+   "halftime": "2:0",
    "home": "FC Teutonia U15 2",
    "home_plan": "FC Teutonia U15 2",
    "id": "031KK5UGFC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:30:00+00:00",
    "location": "Sportanlage Kunstrasen / Platz 3 | Thusnelda-Lang-Brumann-Str. 14 | 80637 München",
    "pairing": "FC Teutonia U15 2 – TSV Großhadern U15",
-   "result": null,
+   "result": "2:0",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U15",
@@ -1238,27 +1268,29 @@
    "team_label": "U12"
   },
   "031KKBB2B0000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-21T12:40:26.790094+00:00",
+   "checked": "2026-11-21T13:40:48.925760+00:00",
    "competition": "U12 (JgL) Kreisklasse Süd 1",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern U12",
    "guest_plan": "TSV Großhadern U12",
-   "halftime": null,
+   "halftime": "0:3",
    "home": "TSV München-Ost U12",
    "home_plan": "TSV München-Ost U12",
    "id": "031KKBB2B0000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:00:00+00:00",
    "location": "Sportanlage Sieboldstraße | Sieboldstr. 4 | 81669 München",
    "pairing": "TSV München-Ost U12 – TSV Großhadern U12",
-   "result": null,
+   "result": "0:7",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U12",
@@ -1546,27 +1578,29 @@
    "team_label": "U10"
   },
   "032KFEI5BK000000VS5489BTVSIO88SN": {
-   "checked": "2026-11-21T12:40:00.001014+00:00",
+   "checked": "2026-11-21T14:05:23.080138+00:00",
    "competition": "FS/DJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
    "guest": "TSV Großhadern U12 2",
    "guest_plan": "TSV Großhadern U12 2",
-   "halftime": null,
+   "halftime": "0:0",
    "home": "SV WB Allianz München U12 2",
    "home_plan": "SV WB Allianz München U12 2",
    "id": "032KFEI5BK000000VS5489BTVSIO88SN",
    "kickoff": "2026-11-21T12:30:00+00:00",
    "location": "Sportcampus Neufreimann, Kunstrasen | Henny-Seidemann-Straße 19 | 80939 München",
    "pairing": "SV WB Allianz München U12 2 – TSV Großhadern U12 2",
-   "result": null,
+   "result": "1:1",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "TSV Großhadern U12 2",
