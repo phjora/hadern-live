@@ -754,27 +754,29 @@
    "team_label": "U19"
   },
   "031KK1KRTC000000VS5489BUVVKNMR0J": {
-   "checked": "2026-11-21T18:20:00.002443+00:00",
+   "checked": "2026-11-21T19:10:00.004191+00:00",
    "competition": "U19 (A-Jun.) Kreisklasse Süd",
    "festival": false,
    "festival_hint": false,
    "guest": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "guest_plan": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
-   "halftime": null,
+   "halftime": "0:3",
    "home": "SC München-Süd U19",
    "home_plan": "SC München-Süd U19",
    "id": "031KK1KRTC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T17:00:00+00:00",
    "location": "BSA Thalkirchner Straße, Kunstrasen | Thalkirchner Str. 209 | 81371 München",
    "pairing": "SC München-Süd U19 – (SG) Großhadern/Sentilo-B./BSC Sendling U19",
-   "result": null,
+   "result": "0:3",
    "st": {
+    "final_sent": true,
     "goals": [],
     "kickoff_sent": true,
     "scores": [],
     "seen": true,
     "statuses": [
-     "scheduled"
+     "scheduled",
+     "acknowledged"
     ]
    },
    "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
