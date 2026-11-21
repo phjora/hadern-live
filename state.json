@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-20",
+ "digest_date": "2026-11-21",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -243,8 +243,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern 2",
+   "team_label": "Zweite"
   },
   "031FNQH8O0000000VS5489BUVSJ4CRAP": {
    "checked": "2026-11-15T12:46:14.464310+00:00",
@@ -470,8 +470,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern 2",
+   "team_label": "Zweite"
   },
   "031K543LAS000000VS5489BUVVKNMR0J": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -613,8 +613,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
   },
   "031KJUIVGO000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T11:15:42.537565+00:00",
@@ -753,8 +753,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "team_label": "U19"
   },
   "031KK28HLC000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T16:16:00.742010+00:00",
@@ -790,17 +790,28 @@
    "team_label": "U17"
   },
   "031KK28HU4000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-21T12:40:00.001014+00:00",
    "competition": "U17 (B-Jun.) Kreisliga Süd 2",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U17",
    "guest_plan": "TSV Großhadern U17",
+   "halftime": null,
+   "home": "SV Aubing U17",
    "home_plan": "SV Aubing U17",
    "id": "031KK28HU4000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:30:00+00:00",
    "location": "BSA Kronwinkler Straße, Kunstrasen | Kronwinkler Str. 25 | 81245 München",
    "pairing": "SV Aubing U17 – TSV Großhadern U17",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U17",
    "team_label": "U17"
@@ -876,20 +887,31 @@
    "team_label": "U15"
   },
   "031KK5UGFC000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-21T12:40:00.001014+00:00",
    "competition": "U15 (JgL) Kreisklasse Süd",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U15",
    "guest_plan": "TSV Großhadern U15",
+   "halftime": null,
+   "home": "FC Teutonia U15 2",
    "home_plan": "FC Teutonia U15 2",
    "id": "031KK5UGFC000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:30:00+00:00",
    "location": "Sportanlage Kunstrasen / Platz 3 | Thusnelda-Lang-Brumann-Str. 14 | 80637 München",
    "pairing": "FC Teutonia U15 2 – TSV Großhadern U15",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U15",
+   "team_label": "U15"
   },
   "031KK5UGL8000000VS5489BUVVKNMR0J": {
    "competition": "Meisterschaften, U15 (JgL) Kreisklasse Süd",
@@ -1075,8 +1097,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U14",
+   "team_label": "U14"
   },
   "031KK8803G000000VS5489BUVVKNMR0J": {
    "competition": "Meisterschaften, U14 (JgL) Gruppe Süd",
@@ -1216,20 +1238,31 @@
    "team_label": "U12"
   },
   "031KKBB2B0000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-21T12:40:26.790094+00:00",
    "competition": "U12 (JgL) Kreisklasse Süd 1",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U12",
    "guest_plan": "TSV Großhadern U12",
+   "halftime": null,
+   "home": "TSV München-Ost U12",
    "home_plan": "TSV München-Ost U12",
    "id": "031KKBB2B0000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-21T12:00:00+00:00",
    "location": "Sportanlage Sieboldstraße | Sieboldstr. 4 | 81669 München",
    "pairing": "TSV München-Ost U12 – TSV Großhadern U12",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12",
+   "team_label": "U12"
   },
   "031KKE88T4000000VS5489BUVVKNMR0J": {
    "checked": "2026-11-08T15:21:38.314989+00:00",
@@ -1509,28 +1542,39 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
   },
   "032KFEI5BK000000VS5489BTVSIO88SN": {
+   "checked": "2026-11-21T12:40:00.001014+00:00",
    "competition": "FS/DJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U12 2",
    "guest_plan": "TSV Großhadern U12 2",
+   "halftime": null,
+   "home": "SV WB Allianz München U12 2",
    "home_plan": "SV WB Allianz München U12 2",
    "id": "032KFEI5BK000000VS5489BTVSIO88SN",
    "kickoff": "2026-11-21T12:30:00+00:00",
    "location": "Sportcampus Neufreimann, Kunstrasen | Henny-Seidemann-Straße 19 | 80939 München",
    "pairing": "SV WB Allianz München U12 2 – TSV Großhadern U12 2",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   },
   "032MLP0CRO000000VS5489BTVSIO88SN": {
    "competition": "FS/FJ/K-FS/M/1",
-   "festival": false,
+   "festival": true,
    "festival_hint": false,
    "guest_plan": "SV München West U9",
    "home_plan": "TSV Großhadern U9",
@@ -1539,10 +1583,12 @@
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U9 – SV München West U9",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U9",
+   "team_label": "U9"
   },
   "032MODB0G8000000VS5489BTVSIO88SN": {
    "competition": "FS/DJ/K-FS/M/1",
@@ -1557,8 +1603,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   },
   "032N1QA1P0000000VS5489BTVSIO88SN": {
    "competition": "FS/EJ/K-FS/M/1",
@@ -1573,8 +1619,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U10",
+   "team_label": "U10"
   },
   "032OHG7KRK000000VS5489BTVSIO88SN": {
    "competition": "FS/DJ/K-FS/M/1",
@@ -1589,8 +1635,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   }
  },
  "teams": [
@@ -1601,12 +1647,12 @@
   },
   {
    "id": "016PB0FKJ0000000VV0AG80NVV8OQVTB",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern 2",
    "slug": "tsv-grosshadern-2"
   },
   {
    "id": "02BDU5KJVG000000VS5489B1VTPVH7C1",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "slug": "sg-grosshadern-sentilo-b-bsc-sendling-u19"
   },
   {
@@ -1616,54 +1662,54 @@
   },
   {
    "id": "03293L64N0000000VS5489BRVV1OCL2F",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern",
    "slug": "tsv-grosshadern"
   },
   {
    "id": "0207TMGCRO000000VS548985VSL7HPD7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U15",
    "slug": "tsv-grosshadern-u15"
   },
   {
    "id": "02TPR1HM10000000VS5489BRVSS9M1SM",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U14",
    "slug": "tsv-grosshadern-u14"
   },
   {
    "id": "011MIA9FVG000000VTVG0001VTR8C1K7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U12",
    "slug": "tsv-grosshadern-u12"
   },
   {
    "id": "031F0JCSIO000000VS5489BRVTPI24NQ",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U12 2",
    "slug": "tsv-grosshadern-u12-2"
   },
   {
    "id": "011MIBCK0K000000VTVG0001VTR8C1K7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10",
    "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "03293LAR9K000000VS5489BRVV1OCL2F",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10",
    "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "012DK7BA90000000VTVG0001VU5LEIAC",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10 2",
    "slug": "tsv-grosshadern-u10-2"
   },
   {
    "id": "011MICV7L8000000VTVG0001VTR8C1K7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U9",
    "slug": "tsv-grosshadern-u9"
   },
   {
    "id": "02TPQRFARO000000VS5489BRVSS9M1SM",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U8",
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-20"
+ "teams_date": "2026-11-21"
 }
