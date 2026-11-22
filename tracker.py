@@ -14,12 +14,10 @@ from __future__ import annotations
 
 import argparse
 import html as html_lib
-import base64
 import io
 import json
 import os
 import re
-import sys
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -35,7 +33,6 @@ STATE_PATH = ROOT / "state.json"
 ICS_OUT = ROOT / "docs" / "ergebnisse.ics"
 
 BFV = "https://www.bfv.de"
-SERVICE = "https://service.bfv.de/rest"
 FONT_URL = "https://app.bfv.de/export.fontface/-/format/ttf/id/{fid}/type/font"
 UA = "HadernerErgebnistracker/0.2 (Vereinsprojekt; Prototyp)"
 TZ = ZoneInfo("Europe/Berlin")
@@ -382,17 +379,6 @@ def our_side(info: dict, club_id: str) -> str | None:
     if info.get("guest_club") == club_id:
         return "guest"
     return None
-
-
-def _verdict(result: str | None, side: str | None) -> str:
-    if not (result and side and ":" in result):
-        return ""
-    try:
-        h, a = (int(x) for x in result.split(":"))
-    except ValueError:
-        return ""
-    mine, theirs = (h, a) if side == "home" else (a, h)
-    return " ✅ Sieg" if mine > theirs else " ❌ Niederlage" if mine < theirs else " 🤝 Remis"
 
 
 def local_time(iso: str) -> str:
