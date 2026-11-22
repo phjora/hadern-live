@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-21",
+ "digest_date": "2026-11-22",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -1117,17 +1117,34 @@
    "team_label": "U14"
   },
   "031KK8800G000000VS5489BUVVKNMR0J": {
+   "checked": "2026-11-22T09:40:22.242850+00:00",
    "competition": "U14 (JgL) Gruppe Süd",
    "festival": false,
    "festival_hint": false,
+   "guest": "FC Teutonia U14 2",
    "guest_plan": "FC Teutonia U14 2",
+   "halftime": "1:1",
+   "home": "TSV Großhadern U14",
    "home_plan": "TSV Großhadern U14",
    "id": "031KK8800G000000VS5489BUVVKNMR0J",
    "kickoff": "2026-11-22T08:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern U14 – FC Teutonia U14 2",
+   "result": "2:1",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [
+     1,
+     2,
+     3
+    ],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
    "team": "TSV Großhadern U14",
    "team_label": "U14"
@@ -1564,17 +1581,30 @@
    "team_label": "U9"
   },
   "032KCFK02O000000VS5489BTVSIO88SN": {
+   "checked": "2026-11-22T10:35:00.003796+00:00",
    "competition": "FS/EJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U10",
    "guest_plan": "TSV Großhadern U10",
+   "halftime": "2:2",
+   "home": "TSV Neuried E1",
    "home_plan": "TSV Neuried E1",
    "id": "032KCFK02O000000VS5489BTVSIO88SN",
    "kickoff": "2026-11-22T09:00:00+00:00",
    "location": "Sportanlage Neuried, Kunstrasen | Am Sportpark 8 | 82061 Neuried",
    "pairing": "TSV Neuried E1 – TSV Großhadern U10",
+   "result": "5:2",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
@@ -1747,5 +1777,5 @@
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-21"
+ "teams_date": "2026-11-22"
 }
