@@ -113,16 +113,17 @@ Sicht, Gegner in der zweiten Zeile mit (H)/(A).
 
 ## Offene Punkte
 
-- **Tor-Pushes über den Spielstand und die Mehr-Ticker-Auswahl** sind nur gegen nachgestellte
-  Daten getestet (Spiel vom 08.11.). Wie die Ticker-Felder `live` und `timeplayed` während eines
-  laufenden Spiels aussehen, ist angenommen. Ob der erste echte Test am 15.11. sauber lief,
-  ist hier nicht festgehalten: Logs der Läufe von diesem Tag ansehen.
+- **Tor-Pushes über den Spielstand** laufen im echten Betrieb: Liveticker am 15.11. und am
+  Wochenende 21./22.11. kamen laut Philipp sauber an. Ob dabei ein Spiel mit zwei Tickern war,
+  ist nicht bekannt. Die Mehr-Ticker-Auswahl (`apply_best_ticker`) ist deshalb weiter nur gegen
+  nachgestellte Daten getestet (Spiel vom 08.11.); wie die Ticker-Felder `live` und `timeplayed`
+  während eines laufenden Spiels aussehen, ist angenommen.
 - **Zustellung aufs iPhone:** ntfy stellt unter iOS teils erst zu, wenn die App geöffnet wird
   (Stromsparmodus, Hintergrundaktualisierung). Falls das anhält, ist Telegram die Alternative.
-- **Tests fehlen im Repo.** Bisher wurde mit Wegwerf-Skripten geprüft, die Uhr, `time.sleep` und
-  `fetch_match` ersetzen und einen ganzen Spieltag durchspielen. Sinnvoller erster Schritt:
-  solche Simulationen als `tests/` einchecken (ganzer Tag, Wochentag mit Abendspiel,
-  zwei Ticker, Übersichts-Zeitpunkt, Absage).
+- **Tests fehlen im Repo.** Philipp hat die bisherigen Simulations-Skripte als ZIP bekommen
+  (`tests/` und `sample/`, mit eigener README): Sie ersetzen Uhr, `time.sleep` und die BFV-Abrufe
+  und spielen ganze Spieltage durch. Erster Schritt: einchecken, erzeugte Dateien in `.gitignore`,
+  dann in pytest mit festen Erwartungen überführen.
 - **Aufräumen:** Workflow-Eingabe `chained` und die Umgebungsvariable `CHAINED` sind seit dem
   Wegfall der Test-Push ohne Funktion; `_verdict` sowie die Importe `base64` und `sys` sind
   ungenutzt; `actions/checkout@v4` und `setup-python@v5` melden eine Node-20-Warnung.
