@@ -9,12 +9,13 @@ Besitzer: Philipp (GitHub `phjora`). Stand dieser Datei: 22.11.2026.
 
 | Datei | Zweck |
 |---|---|
-| `tracker.py` | Die gesamte Logik (ein Skript, ~820 Zeilen) |
+| `tracker.py` | Die gesamte Logik (ein Skript, ~800 Zeilen) |
 | `config.json` | Verein, Team-Kurznamen, Festival-Teams, Trainerliste |
 | `state.json` | Zustand zwischen den Läufen. Wird vom Workflow committet, nie von Hand ändern |
 | `docs/ergebnisse.ics` | Kalender mit Spielen und Ergebnissen, wird bei jedem Lauf neu geschrieben |
 | `.github/workflows/tracker.yml` | Start, Speichern des Zustands, Selbst-Übergabe |
 | `requirements.txt` | requests, fonttools, tzdata |
+| `tests/`, `sample/` | Simulations-Skripte (kein pytest) und gespeicherte BFV-Seiten, siehe `tests/README.md` |
 
 ## Ausführen
 
@@ -111,6 +112,13 @@ Sicht, Gegner in der zweiten Zeile mit (H)/(A).
 - In `config.json` und Pushes nur Vornamen.
 - Rücksicht auf bfv.de: Abrufe nacheinander mit kurzen Pausen, eigener User-Agent, kein dichterer Takt.
 
+## Zusammenarbeit mit Philipp
+
+- Philipp kennt sich mit der GitHub-Struktur (Branches, `main`, Pull Requests) nicht gut aus:
+  in einfachen Worten erklären, wo eine Änderung liegt und ab wann sie wirkt.
+- **Immer** darauf hinweisen, wenn er selbst neu pullen muss, um seine lokale Kopie zu
+  aktualisieren. Auf Nachfrage das Aktualisieren möglichst selbst übernehmen.
+
 ## Offene Punkte
 
 - **Tor-Pushes über den Spielstand** laufen im echten Betrieb: Liveticker am 15.11. und am
@@ -120,14 +128,10 @@ Sicht, Gegner in der zweiten Zeile mit (H)/(A).
   während eines laufenden Spiels aussehen, ist angenommen.
 - **Zustellung aufs iPhone:** ntfy stellt unter iOS teils erst zu, wenn die App geöffnet wird
   (Stromsparmodus, Hintergrundaktualisierung). Falls das anhält, ist Telegram die Alternative.
-- **Tests fehlen im Repo.** Philipp hat die bisherigen Simulations-Skripte als ZIP bekommen
-  (`tests/` und `sample/`, mit eigener README): Sie ersetzen Uhr, `time.sleep` und die BFV-Abrufe
-  und spielen ganze Spieltage durch. Erster Schritt: einchecken, erzeugte Dateien in `.gitignore`,
-  dann in pytest mit festen Erwartungen überführen.
-- **Aufräumen:** Workflow-Eingabe `chained` und die Umgebungsvariable `CHAINED` sind seit dem
-  Wegfall der Test-Push ohne Funktion; `_verdict` sowie die Importe `base64` und `sys` sind
-  ungenutzt; `actions/checkout@v4` und `setup-python@v5` melden eine Node-20-Warnung.
-- **README.md** beschreibt noch einen älteren Stand (Übersicht um 7 Uhr, Start nur über GitHub-Cron).
+- **Tests sind nur Simulationen.** `tests/` und `sample/` sind eingecheckt (mit eigener README),
+  erzeugte Dateien stehen in `.gitignore`. Die Skripte ersetzen Uhr, `time.sleep` und die
+  BFV-Abrufe und spielen ganze Spieltage durch; nur `test_two_tickers.py` prüft sich selbst.
+  Nächster Schritt: in pytest mit festen Erwartungen überführen.
 
 ## Geparkt (erst auf Zuruf)
 

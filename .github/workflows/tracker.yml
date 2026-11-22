@@ -2,17 +2,13 @@ name: Ergebnistracker
 
 on:
   schedule:
+    # Nur Reserve: Verlässlich startet der externe Wecker bei cron-job.org (workflow_dispatch).
     # Zeiten in UTC (Winter: +1 h, Sommer: +2 h)
-    - cron: "2 7 * * *"           # täglich ~08:00 Uhr: Spieltag-Übersicht
-    - cron: "32 7 * * *"          # Reserve, falls GitHub den ersten Start auslässt (Übersicht kommt nur einmal)
+    - cron: "2 7 * * *"           # täglich ~08:00 Uhr: erster Start des Tages
+    - cron: "32 7 * * *"          # Reserve, falls GitHub den ersten Start auslässt
     - cron: "13,33,53 7-19 * * 0,6"   # Sa/So 08–20 Uhr alle 20 Minuten (krumme Minuten: GitHub lässt volle Stunden öfter aus)
     - cron: "17,47 14-19 * * 1-5"     # Mo–Fr 15–20 Uhr alle 30 Minuten (Reserve für Spiele unter der Woche)
-  workflow_dispatch:                # manuell starten über "Run workflow"
-    inputs:
-      chained:
-        description: "Automatische Übergabe (keine Testnachricht)"
-        type: boolean
-        default: false
+  workflow_dispatch:                # externer Wecker (cron-job.org), Selbst-Übergabe oder manuell über "Run workflow"
 
 concurrency:
   group: ergebnistracker
@@ -27,11 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: main   # neuesten Stand holen, auch wenn der Lauf in der Warteschlange stand
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -41,7 +37,6 @@ jobs:
       - name: Spiele beobachten
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          CHAINED: ${{ inputs.chained }}
         run: python tracker.py --watch
 
       - name: Zustand und Kalender speichern
@@ -69,5 +64,5 @@ jobs:
         run: |
           if [ -f .chain ]; then
             echo "Übergabe – nächste Prüfung $(cat .chain)"
-            gh workflow run tracker.yml --ref main -f chained=true
+            gh workflow run tracker.yml --ref main
           fi

@@ -1,0 +1,6 @@
+__pycache__/
+
+# Von den Simulations-Skripten in tests/ erzeugt
+tests/state_*.json
+tests/erg_*.ics
+tests/.chain*
