@@ -83,17 +83,41 @@
    "team_label": "Erste"
   },
   "031BSK61T8000000VS5489BTVUS470OH": {
+   "checked": "2026-11-22T15:19:22.300137+00:00",
    "competition": "Kreisliga München",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Neuried",
    "guest_plan": "TSV Neuried",
+   "halftime": "1:1",
+   "home": "TSV Großhadern",
    "home_plan": "TSV Großhadern",
    "id": "031BSK61T8000000VS5489BTVUS470OH",
    "kickoff": "2026-11-22T13:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "TSV Großhadern – TSV Neuried",
+   "result": "1:2",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "live_score": "1:2",
+    "scores": [
+     "1:0",
+     "1:1",
+     "1:2"
+    ],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "live",
+     "finished",
+     "acknowledged"
+    ],
+    "ticker": true,
+    "was_live": true,
+    "whistle_result": "1:2",
+    "whistle_sent": true
    },
    "team": "TSV Großhadern",
    "team_label": "Erste"
@@ -231,17 +255,30 @@
    "team_label": "1. Mannschaft"
   },
   "031FNQH8F4000000VS5489BUVSJ4CRAP": {
+   "checked": "2026-11-22T15:20:00.003953+00:00",
    "competition": "113 Kreisklasse 3",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern 2",
    "guest_plan": "TSV Großhadern 2",
+   "halftime": "2:2",
+   "home": "Münchner Kickers",
    "home_plan": "Münchner Kickers",
    "id": "031FNQH8F4000000VS5489BUVSJ4CRAP",
    "kickoff": "2026-11-22T13:00:00+00:00",
    "location": "BSA Wolkerweg, Kunstrasen | Wolkerweg 17 | 81375 München",
    "pairing": "Münchner Kickers – TSV Großhadern 2",
+   "result": "6:2",
    "st": {
-    "goals": []
+    "final_sent": true,
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled",
+     "acknowledged"
+    ]
    },
    "team": "TSV Großhadern 2",
    "team_label": "Zweite"
