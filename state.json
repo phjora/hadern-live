@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-23",
+ "digest_date": "2026-11-24",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -1740,6 +1740,22 @@
    },
    "team": "TSV Großhadern U12 2",
    "team_label": "U12 2"
+  },
+  "032PUV7CM8000000VS5489BUVT7T9F23": {
+   "competition": "FS/AJ/K-FS/M/1",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "SV Pullach U19",
+   "home_plan": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "id": "032PUV7CM8000000VS5489BUVT7T9F23",
+   "kickoff": "2026-11-28T11:00:00+00:00",
+   "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
+   "pairing": "(SG) Großhadern/Sentilo-B./BSC Sendling U19 – SV Pullach U19",
+   "st": {
+    "goals": []
+   },
+   "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "team_label": "U19"
   }
  },
  "teams": [
@@ -1814,5 +1830,5 @@
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-23"
+ "teams_date": "2026-11-24"
 }
