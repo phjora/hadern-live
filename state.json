@@ -507,8 +507,8 @@
    "st": {
     "goals": []
    },
-   "team": "TSV Großhadern 2",
-   "team_label": "Zweite"
+   "team": "Bayerischer Fussball-Verband",
+   "team_label": "Bayerischer Fussball-Verband"
   },
   "031K543LAS000000VS5489BUVVKNMR0J": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -1761,47 +1761,47 @@
  "teams": [
   {
    "id": "016PCCL5TO000000VV0AG811VTE5EA5R",
-   "name": "TSV Großhadern",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern"
   },
   {
    "id": "016PB0FKJ0000000VV0AG80NVV8OQVTB",
-   "name": "TSV Großhadern 2",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-2"
   },
   {
    "id": "02BDU5KJVG000000VS5489B1VTPVH7C1",
-   "name": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "sg-grosshadern-sentilo-b-bsc-sendling-u19"
   },
   {
    "id": "02TPR2ED9K000000VS5489BRVSS9M1SM",
-   "name": "TSV Großhadern U17",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u17"
   },
   {
    "id": "03293L64N0000000VS5489BRVV1OCL2F",
-   "name": "TSV Großhadern",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern"
   },
   {
    "id": "0207TMGCRO000000VS548985VSL7HPD7",
-   "name": "TSV Großhadern U15",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u15"
   },
   {
    "id": "02TPR1HM10000000VS5489BRVSS9M1SM",
-   "name": "TSV Großhadern U14",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u14"
   },
   {
    "id": "011MIA9FVG000000VTVG0001VTR8C1K7",
-   "name": "TSV Großhadern U12",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u12"
   },
   {
    "id": "031F0JCSIO000000VS5489BRVTPI24NQ",
-   "name": "TSV Großhadern U12 2",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u12-2"
   },
   {
@@ -1811,12 +1811,12 @@
   },
   {
    "id": "03293LAR9K000000VS5489BRVV1OCL2F",
-   "name": "TSV Großhadern U10",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "012DK7BA90000000VTVG0001VU5LEIAC",
-   "name": "TSV Großhadern U10 2",
+   "name": "Bayerischer Fussball-Verband",
    "slug": "tsv-grosshadern-u10-2"
   },
   {
@@ -1830,5 +1830,5 @@
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-26"
+ "teams_date": "2026-11-27"
 }
