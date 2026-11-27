@@ -119,6 +119,13 @@ Sicht, Gegner in der zweiten Zeile mit (H)/(A).
 - **Immer** darauf hinweisen, wenn er selbst neu pullen muss, um seine lokale Kopie zu
   aktualisieren. Auf Nachfrage das Aktualisieren möglichst selbst übernehmen.
 
+## Daily Note & Vault
+Vault-Struktur (Obsidian „Notizen“): 00 Inbox · 01 Daily Notes · 02 Business · 03 TSV Großhadern · 04 Fußball · 05 Hobby · 99 Vorlagen. Ordner ohne Nummer nie verwenden oder neu anlegen.
+Am Ende jeder abgeschlossenen Aufgabe (nicht bei reinen Fragen): Ist der Ordner „Notizen“ in dieser Session verbunden, ergänze „01 Daily Notes/YYYY-MM-DD.md“ – nur ergänzen, nie überschreiben; fehlt die Note, nach „99 Vorlagen/Daily Note.md“ anlegen und `<% tp.file.title %>` durch das Datum ersetzen. Ist er nicht verbunden, gib mir am Ende einen kurzen Markdown-Block zum Reinkopieren.
+- Abschnitte: Erledigt / Offen / Entscheidungen / Stunden
+- Präfix: Name dieses Repos in eckigen Klammern, z. B. [U9 Teammanager]
+- Stunden immer als „Team/Tätigkeit – X h“
+
 ## Offene Punkte
 
 - **Tor-Pushes über den Spielstand** laufen im echten Betrieb: Liveticker am 15.11. und am
