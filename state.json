@@ -1,5 +1,5 @@
 {
- "digest_date": "2026-11-27",
+ "digest_date": "2026-11-28",
  "games": {
   "031BSK5UCS000000VS5489BTVUS470OH": {
    "checked": "2026-11-08T16:03:00.740582+00:00",
@@ -507,8 +507,8 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern 2",
+   "team_label": "Zweite"
   },
   "031K543LAS000000VS5489BUVVKNMR0J": {
    "competition": "Freundschaftsspiele, FS/H/K-FS/M/1",
@@ -1675,6 +1675,54 @@
    "team": "TSV Großhadern U12 2",
    "team_label": "U12 2"
   },
+  "032MK47DE8000000VS5489BUVT7T9F23": {
+   "competition": "HKM München VR5 U17",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern",
+   "home_plan": "FT München-Gern U17",
+   "id": "032MK47DE8000000VS5489BUVT7T9F23",
+   "kickoff": "2026-12-19T12:24:00+00:00",
+   "location": "Sporthalle Hebertshausen | Freisinger Str. 19 | 85241 Hebertshausen",
+   "pairing": "FT München-Gern U17 – TSV Großhadern",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern",
+   "team_label": "Erste"
+  },
+  "032MK47DGG000000VS5489BUVT7T9F23": {
+   "competition": "HKM München VR5 U17",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "TSV Großhadern",
+   "home_plan": "ESV München",
+   "id": "032MK47DGG000000VS5489BUVT7T9F23",
+   "kickoff": "2026-12-19T13:24:00+00:00",
+   "location": "Sporthalle Hebertshausen | Freisinger Str. 19 | 85241 Hebertshausen",
+   "pairing": "ESV München – TSV Großhadern",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern",
+   "team_label": "Erste"
+  },
+  "032MK47DHK000000VS5489BUVT7T9F23": {
+   "competition": "HKM München VR5 U17",
+   "festival": false,
+   "festival_hint": false,
+   "guest_plan": "FC Sportfreunde München U17",
+   "home_plan": "TSV Großhadern",
+   "id": "032MK47DHK000000VS5489BUVT7T9F23",
+   "kickoff": "2026-12-19T14:00:00+00:00",
+   "location": "Sporthalle Hebertshausen | Freisinger Str. 19 | 85241 Hebertshausen",
+   "pairing": "TSV Großhadern – FC Sportfreunde München U17",
+   "st": {
+    "goals": []
+   },
+   "team": "TSV Großhadern",
+   "team_label": "Erste"
+  },
   "032MLP0CRO000000VS5489BTVSIO88SN": {
    "competition": "FS/FJ/K-FS/M/1",
    "festival": true,
@@ -1706,21 +1754,32 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   },
   "032N1QA1P0000000VS5489BTVSIO88SN": {
+   "checked": "2026-11-28T12:25:22.576681+00:00",
    "competition": "FS/EJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
+   "guest": "TSV Großhadern U10",
    "guest_plan": "TSV Großhadern U10",
+   "halftime": null,
+   "home": "SpVgg 1906 Haidhausen U10 2",
    "home_plan": "SpVgg 1906 Haidhausen U10 2",
    "id": "032N1QA1P0000000VS5489BTVSIO88SN",
    "kickoff": "2026-11-28T09:00:00+00:00",
    "location": "Sportanlage St.-Martin-Straße, Kleinfeld | St.-Martin-Str. 35 | 81541 München",
    "pairing": "SpVgg 1906 Haidhausen U10 2 – TSV Großhadern U10",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
    "team": "TSV Großhadern U10",
    "team_label": "U10"
@@ -1738,70 +1797,81 @@
    "st": {
     "goals": []
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "TSV Großhadern U12 2",
+   "team_label": "U12 2"
   },
   "032PUV7CM8000000VS5489BUVT7T9F23": {
+   "checked": "2026-11-28T12:40:00.004585+00:00",
    "competition": "FS/AJ/K-FS/M/1",
    "festival": false,
    "festival_hint": false,
+   "guest": "SV Pullach U19",
    "guest_plan": "SV Pullach U19",
+   "halftime": null,
+   "home": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "home_plan": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "id": "032PUV7CM8000000VS5489BUVT7T9F23",
    "kickoff": "2026-11-28T11:00:00+00:00",
    "location": "BSA Ludwig-Hunger-Straße, Kunstrasen 2 | Ludwig-Hunger-Str. 11 | 81375 München",
    "pairing": "(SG) Großhadern/Sentilo-B./BSC Sendling U19 – SV Pullach U19",
+   "result": null,
    "st": {
-    "goals": []
+    "goals": [],
+    "kickoff_sent": true,
+    "scores": [],
+    "seen": true,
+    "statuses": [
+     "scheduled"
+    ]
    },
-   "team": "Bayerischer Fussball-Verband",
-   "team_label": "Bayerischer Fussball-Verband"
+   "team": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
+   "team_label": "U19"
   }
  },
  "teams": [
   {
    "id": "016PCCL5TO000000VV0AG811VTE5EA5R",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern",
    "slug": "tsv-grosshadern"
   },
   {
    "id": "016PB0FKJ0000000VV0AG80NVV8OQVTB",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern 2",
    "slug": "tsv-grosshadern-2"
   },
   {
    "id": "02BDU5KJVG000000VS5489B1VTPVH7C1",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "(SG) Großhadern/Sentilo-B./BSC Sendling U19",
    "slug": "sg-grosshadern-sentilo-b-bsc-sendling-u19"
   },
   {
    "id": "02TPR2ED9K000000VS5489BRVSS9M1SM",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U17",
    "slug": "tsv-grosshadern-u17"
   },
   {
    "id": "03293L64N0000000VS5489BRVV1OCL2F",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern",
    "slug": "tsv-grosshadern"
   },
   {
    "id": "0207TMGCRO000000VS548985VSL7HPD7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U15",
    "slug": "tsv-grosshadern-u15"
   },
   {
    "id": "02TPR1HM10000000VS5489BRVSS9M1SM",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U14",
    "slug": "tsv-grosshadern-u14"
   },
   {
    "id": "011MIA9FVG000000VTVG0001VTR8C1K7",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U12",
    "slug": "tsv-grosshadern-u12"
   },
   {
    "id": "031F0JCSIO000000VS5489BRVTPI24NQ",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U12 2",
    "slug": "tsv-grosshadern-u12-2"
   },
   {
@@ -1811,12 +1881,12 @@
   },
   {
    "id": "03293LAR9K000000VS5489BRVV1OCL2F",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10",
    "slug": "tsv-grosshadern-u10"
   },
   {
    "id": "012DK7BA90000000VTVG0001VU5LEIAC",
-   "name": "Bayerischer Fussball-Verband",
+   "name": "TSV Großhadern U10 2",
    "slug": "tsv-grosshadern-u10-2"
   },
   {
@@ -1830,5 +1900,5 @@
    "slug": "tsv-grosshadern-u8"
   }
  ],
- "teams_date": "2026-11-27"
+ "teams_date": "2026-11-28"
 }
